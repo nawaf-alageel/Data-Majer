@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+    <title>Cooperative Training Programs</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- Include Font Awesome for Icons -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Hamburger Menu Button for Mobile -->
+            <button class="toggle-header" id="hamburger" onclick="toggleMenu(event)" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-ellipsis-v"></i> <!-- Font Awesome Vertical Ellipsis Icon -->
+            </button>
+
+            <div class="titles">
+                <h3>Cooperative Training Programs</h3>
+            </div>
+
+            <nav id="nav-menu" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="../Html/Home.html">Home</a></li>
+                    <li><a href="../Html/study_plan.html">Study Plan</a></li>
+                    <li><a href="../Html/Specialized_courses.html">Specialized Courses</a></li>
+                    <li><a href="../Html/career_paths.html">Career Paths</a></li>
+                    <li><a href="../Html/certifications.html">Certifications</a></li>
+                    <li><a href="../Html/cooperative-training.html">Cooperative Training Programs</a></li>
+                    <li><a href="../Html/GBA-calculator.html">CGPA Calculator</a></li>
+                    <li><a href="../Html/contact.html">Contact Us</a></li>
+                    <li><a href="../Html/developer.html">Developers</a></li>
+                </ul>
+            </nav>
+        </div>
+            <!-- Toggle Button for Dark Mode -->
+            <button class="toggle-button" aria-label="Toggle Dark Mode">🌓</button>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="cooperative-training">
+            <h2>برامج التدريب التعاوني</h2>
+            <h2>Cooperative Training Programs</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button onclick="filterPrograms('all')" class="filter-btn active">الكل / All</button>
+                <button onclick="filterPrograms('open')" class="filter-btn">Open</button>
+                <button onclick="filterPrograms('closed')" class="filter-btn">Closed</button>
+            </div>
+
+            <!-- Programs Container -->
+            <div class="programs-container">
+
+                <!-- McKinsey Program -->
+                <div class="program-card open">
+                    <img src="../images/mckinsey-logo.png" alt="McKinsey">
+                    <h3>McKinsey</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.mckinsey.com/careers/search-jobs?countries=Saudi%20Arabia&query=intern" target="_blank" class="english">https://www.mckinsey.com...</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration Majors, Engineering Majors, Computer and Information Sciences Majors</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+<!-- Elm Company Program -->
+<div class="program-card open" style="text-align: left;">
+    <img src="../images/Elm.png" alt="Elm Logo" style="display: block; margin-bottom: 10px;">
+    <h3 class="english">Coop Training - Computer Science (Jan, Mar, Jun, Aug 2025 Intake)</h3>
+    <p><strong class="english-label">Link:</strong> <a href="https://career.elm.sa/elm/job/Riyadh-Coop-Training-Computer-Science-%28Jan%2CMar%2CJun%2CAug-2025-Intake%29-Job/1226043000/" target="_blank" class="english">https://career.elm.sa...</a></p>
+    <p><strong class="english-label">Date:</strong> <span class="english">23 Oct 2024</span></p>
+    <p><strong class="english-label">Location:</strong> <span class="english">Riyadh, SA</span></p>
+    <p><strong class="english-label">Job Family:</strong> <span class="english">Corporate</span></p>
+    <p><strong class="english-label">Description:</strong> <span class="english">Elm Company offers multiple Coop opportunities providing a unique experience in IT Development, Quality Assurance, IoT, Artificial Intelligence, Innovation, Data Science, Data Analytics, Business Analysis, Business Development, Sales, Corporate Development, Procurement, and HR.</span></p>
+    <p><strong class="english-label">Eligibility for Co-Op Program:</strong> <span class="english">Minimum GPA of 2.75/4.0 or 3.25/5.0, students in their final semester.</span></p>
+    <p><strong class="english-label">Co-Op Training Duration:</strong> <span class="english">Minimum of 16 weeks.</span></p>
+    <p><strong class="english-label">Job Segment:</strong> <span class="english">Computer Science, Quality Assurance, Business Analyst, Technology</span></p>
+</div>
+
+<!-- National Events Center Program -->
+<div class="program-card open" style="text-align: left;">
+    <img src="../images/NCE.png" alt="NEC Logo" style="display: block; margin-bottom: 10px;">
+    <h3 class="english">NEC Cooperative Training Program</h3>
+    <p><strong class="english-label">Link:</strong> <a href="https://nec.gov.sa/join-us/coop-training-program" target="_blank" class="english">https://nec.gov.sa...</a></p>
+    <p><strong class="english-label">About the Program:</strong> <span class="english">The Cooperative Training Program serves as a solid bridge connecting academic learning and the job market. It is one of the most prestigious educational initiatives that integrates theory with practice. The National Events Center aims to provide students with valuable opportunities to gain the best experience, enabling them to apply their academic knowledge in real-world work environments. It is a true investment in the students' future, where they receive guidance from experts, face real professional challenges, and prepare effectively for their careers. Students become more efficient, confident, and ready to join the job market and contribute effectively in their fields of specialization.</span></p>
+    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Accounting, Finance, Human Resources, IT, Information Systems, Cybersecurity, Industrial Engineering, Mechanical Engineering, Computer Engineering, Law, Event Management, Supply Chain, Risk Management</span></p>
+    <p><strong class="english-label">Eligibility:</strong> <span class="english">Saudi nationality, undergraduate students, passing the personal interview, proficiency in English</span></p>
+</div>
+
+<!-- Alahli Bank Program -->
+<div class="program-card open" style="text-align: left;">
+    <img src="../images/alahli-logo.png" alt="Alahli Bank" style="display: block; margin-bottom: 10px;">
+    <h3 class="english">SNB Cooperative Training Program</h3>
+    <p><strong class="english-label">Link:</strong> <a href="https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program" target="_blank" class="english">https://www.alahli.com...</a></p>
+    <p><strong class="english-label">Eligibility:</strong> <span class="english">Saudi nationality, an active university student (minimum bachelor's degree) from a Ministry of Education accredited university or institution, the training is part of graduation requirements, GPA of no less than 3.75/5 or 2.75/4, passing tests, interviews, and evaluation processes.</span></p>
+    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Technology, Engineering (Industrial Engineering, Computer Science, Software), Legal Studies</span></p>
+    <p><strong class="english-label">Required Documents:</strong> <span class="english">CV, National ID copy, University approval letter stating that cooperative training is a graduation requirement, University approval letter specifying the required training period and contact details of the training supervisor.</span></p>
+</div>
+
+<!-- SIDF Program -->
+<div class="program-card open" style="text-align: left;">
+    <img src="../images/sidf-logo.png" alt="SIDF" style="display: block; margin-bottom: 10px;">
+    <h3 class="english">SIDF</h3>
+    <p class="english"><strong class="english-label">Link:</strong> <a href="mailto:co-op@sidf.gov.sa" class="english">co-op@sidf.gov.sa</a></p>
+    <p class="english"><strong class="english-label">Majors:</strong></p>
+    <p class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</p>
+    <p class="english"><strong class="english-label">City:</strong></p>
+    <p class="english">Riyadh</p>
+    <p class="english"><strong class="english-label">Notes:</strong></p>
+    <div class="english">
+        <p class="english">Email Subject: "COOP Training Application - [Your Name] - [Your Major]"</p>
+        <p class="english"><strong class="english-label">Body:</strong></p>
+        <p class="english">Start with a polite greeting and a brief self-introduction.</p>
+        <p class="english">Express your interest briefly and mention relevant skills or experiences. Attach your resume and any required documents.</p>
+        <p class="english">Provide your contact information.</p>
+        <p class="english">Conclude with a polite statement expressing eagerness to discuss the application.</p>
+        <p class="english">Send your application to <a href="mailto:co-op@sidf.gov.sa">co-op@sidf.gov.sa</a></p>
+    </div>
+</div>
+
+
+                <!-- Alfalak Program -->
+                <div class="program-card open">
+                    <img src="../images/alfalak-logo.png" alt="Alfalak">
+                    <h3>Alfalak</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.alfalak.com/career/internship/" target="_blank" class="english">https://www.alfalak.com...</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">All Year</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Jubail, Riyadh, Khobar, Jeddah</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Internship programs are available in multiple areas such as IT, Marketing, HR, and more. Students can apply for an internship, and we will contact you as soon as a space becomes available.</span></p>
+                </div>
+
+                <!-- Alfanar Program -->
+                <div class="program-card open">
+                    <img src="../images/alfanar-logo.png" alt="Alfanar">
+                    <h3>Alfanar</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://career5.successfactors.eu/sfcareer/jobreqcareerpvt?jobId=5754&company=AlFanarP&st=5E0A1E39A5849C2F2F05FBC16C6A2E5FF6DB5034" target="_blank" class="english">Alfanar Job Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">January</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Jubail</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Headquartered in Riyadh, Saudi Arabia, Alfanar operates construction and manufacturing businesses, design & development centers, and various facilities in the Middle East and other countries.</span></p>
+                </div>
+
+                <!-- Ministry of Transport and Logistic Services Program -->
+                <div class="program-card open">
+                    <img src="../images/ministery-transport-logo.png" alt="Ministry of Transport and Logistic Services">
+                    <h3>Ministry of Transport and Logistic Services</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://mot.gov.sa/ar/eParticipation/Pages/CooperativeTraining.aspx" target="_blank" class="english">https://mot.gov.sa...</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">May</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">All Majors</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Saudi Central Bank Program -->
+                <div class="program-card open">
+                    <img src="../images/sma-logo.png" alt="Saudi Central Bank">
+                    <h3>Saudi Central Bank</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.sama.gov.sa/en-US/Pages/Home.aspx" target="_blank" class="english">Saudi Central Bank</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">May</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Accounting, Business Administration, Finance, Economics</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Ministry of Finance Program -->
+                <div class="program-card closed">
+                    <img src="../images/ministry-finance-logo.png" alt="Ministry of Finance">
+                    <h3>Ministry of Finance</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.mof.gov.sa/mediacenter/news/Pages/News_1512024.aspx" target="_blank" class="english">Ministry of Finance Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">January</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">All Locations</span></p>
+                    <p><strong class="english-label">Notes:</strong>
+                        <span class="english">
+                            Applicants must be Saudi nationals, with a GPA of at least 3.75 out of 5 or 2.75 out of 4, and have an intermediate or higher level of English. Must pass selection and personal interview.<br>
+                            <strong>Requirements:</strong> Important to attach required documents when applying via email (<a href="mailto:add@mof.gov.sa">add@mof.gov.sa</a>) including a letter from the university approving the cooperative training, along with the resume.
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Alrajhi Bank Program -->
+                <div class="program-card closed">
+                    <img src="../images/alrajhi-bank-logo.png" alt="Alrajhi Bank">
+                    <h3>Alrajhi Bank</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.alrajhibank.com.sa/ar/job-search-results/?keyword=coop&sort=22,d&page=1" target="_blank" class="english">Alrajhi Bank Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">If you wish to be considered for Coop opportunities, please send the required documents to <a href="mailto:SchoolOfBanking@alrajhibank.com.sa">SchoolOfBanking@alrajhibank.com.sa</a></span></p>
+                </div>
+
+                <!-- Ministry of Communications and Information Technology Program -->
+                <div class="program-card open">
+                    <img src="../images/mcit-logo.png" alt="Ministry of Communications and Information Technology">
+                    <h3>Ministry of Communications and Information Technology</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.mcit.gov.sa/ar/node/add/co_recruitment" target="_blank" class="english">MCIT Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Capital Market Authority Program -->
+                <div class="program-card closed">
+                    <img src="../images/cma-logo.png" alt="Capital Market Authority">
+                    <h3>Capital Market Authority</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.cma.org.sa/ar/page/coop-program/" target="_blank" class="english">CMA Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">October - December</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Computer and Information Sciences, Law, Media and Communication, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">The authority offers opportunities for students to complete their practical training period to gain work experience and develop professional skills, preparing trainees for the job market.</span></p>
+                </div>
+
+                <!-- Misk Program -->
+                <div class="program-card closed">
+                    <img src="../images/misk-logo.png" alt="Misk">
+                    <h3>Misk</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://hub.misk.org.sa/programs/skills/misk-traineeship-program/" target="_blank" class="english">Misk Traineeship Program Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">January - November</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">The Misk Traineeship Program aims to empower and prepare Saudi youth to become active participants in the future economy by offering professional traineeship opportunities through partnerships with leading local and international companies.</span></p>
+                </div>
+
+                <!-- PwC Program -->
+                <div class="program-card closed">
+                    <img src="../images/pwc-logo.png" alt="PwC">
+                    <h3>PwC</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.pwc.com/m1/en/careers/student-jobs/results.html?wdcountry=SAU&wdjobsite=Global_Campus_Careers&sfsite=grad&source=PwC_Global_Job_Board&wdjobtitle=COOP" target="_blank" class="english">PwC Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">October</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Jeddah, Khobar, Alula, Dhahran</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Our Co-op Internships offer high-caliber students the opportunity to experience work and life at PwC, gain valuable insights into our business and culture, and work on live client projects alongside experienced professionals.</span></p>
+                </div>
+
+                <!-- EY Program -->
+                <div class="program-card closed">
+                    <img src="../images/ey-logo.png" alt="EY">
+                    <h3>EY</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en" target="_blank" class="english">EY Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Jeddah, Khobar</span></p>
+                </div>
+
+                <!-- Deloitte Program -->
+                <div class="program-card closed">
+                    <img src="../images/deloitte-logo.png" alt="Deloitte">
+                    <h3>Deloitte</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://middleeastjobs.deloitte.com/careersME/SearchJobs/intern/" target="_blank" class="english">Deloitte Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Jeddah, Khobar</span></p>
+                </div>
+
+                <!-- Amazon Program -->
+                <div class="program-card closed">
+                    <img src="../images/amazon-logo.png" alt="Amazon">
+                    <h3>Amazon</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://amazon.jobs/en/search?country%5B%5D=SAU&category_type=studentprograms" target="_blank" class="english">Amazon Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">November - January</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Strategic Gears Program -->
+                <div class="program-card closed">
+                    <img src="../images/strategic-gears-logo.png" alt="Strategic Gears">
+                    <h3>Strategic Gears</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://jobs.lever.co/strategicgears/" target="_blank" class="english">Strategic Gears Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Strategic Gears is a leading management consulting firm offering multidisciplinary services to both private and public sectors. Established in 2015 with offices in Riyadh and Jeddah, we opened our first international office in London in 2019.</span></p>
+                </div>
+
+                <!-- Milliman Program -->
+                <div class="program-card closed">
+                    <img src="../images/milliman-logo.png" alt="Milliman">
+                    <h3>Milliman</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://recruiting2.ultipro.com/MIL1017/" target="_blank" class="english">Milliman Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">March - October</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Data-driven insights, deep expertise, and transformative innovation since 1947. Milliman delivers intelligent solutions to improve health and financial security.</span></p>
+                </div>
+
+                <!-- Expro Program -->
+                <div class="program-card closed">
+                    <img src="../images/expro-logo.png" alt="Expro">
+                    <h3>Expro</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.exprogroup.com/" target="_blank" class="english">Expro Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">January</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">In collaboration with the Human Capital Unit and the Academic Unit at the Efficiency Authority for Expenditure and Government Projects, Expro aims to enhance the professional image and social responsibility by training Saudi university students in the Future Makers Program.</span></p>
+                </div>
+
+                <!-- Honeywell Program -->
+                <div class="program-card closed">
+                    <img src="../images/honeywell-logo.png" alt="Honeywell">
+                    <h3>Honeywell</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.honeywell.com/us/en/search-results" target="_blank" class="english">Honeywell Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Dammam, Dhahran</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Honeywell Connected Plant is a leading provider of software solutions for the Process Industry, including Oil and Gas, Refining, Petrochemicals, Paper, Metals, and Pharma industries.</span></p>
+                </div>
+
+                <!-- COOP Government Communication | CGC Program -->
+                <div class="program-card closed">
+                    <img src="../images/cgc-logo.png" alt="COOP Government Communication | CGC">
+                    <h3>COOP Government Communication | CGC</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://cgc.gov.sa/ar/%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A%D8%A9" target="_blank" class="english">CGC Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Saudi Aramco Program -->
+                <div class="program-card closed">
+                    <img src="../images/aramco-logo.png" alt="Saudi Aramco">
+                    <h3>Saudi Aramco</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.aramco.com/en/careers" target="_blank" class="english">Saudi Aramco Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">April</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Saudi Aramco offers internship opportunities to a limited number of high-caliber Saudi students attending both in-Kingdom and out-of-Kingdom universities.</span></p>
+                </div>
+
+                <!-- KPMG Program -->
+                <div class="program-card closed">
+                    <img src="../images/kpmg-logo.png" alt="KPMG">
+                    <h3>KPMG</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://slccareers.kpmg.com/search/?q=coop" target="_blank" class="english">KPMG Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh, Jeddah, Khobar</span></p>
+                </div>
+
+                <!-- Zain Program -->
+                <div class="program-card closed">
+                    <img src="../images/zain-logo.png" alt="Zain">
+                    <h3>Zain</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.zain.com/en/job-search-results/" target="_blank" class="english">Zain Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- SDAIA Program -->
+                <div class="program-card closed">
+                    <img src="../images/sdaia-logo.png" alt="SDAIA">
+                    <h3>SDAIA</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.sdaia.gov.sa/training" target="_blank" class="english">SDAIA Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">May</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">The Saudi Data and Artificial Intelligence Authority (SDAIA) aims to contribute to Saudi Vision 2030 through its cooperative training program, enhancing the skills and knowledge of students.</span></p>
+                    <p><strong class="english-label">Email:</strong> <a href="mailto:cooptraining@sdaia.gov.sa" class="english">cooptraining@sdaia.gov.sa</a></p>
+                </div>
+
+                <!-- Ministry of Tourism Program -->
+                <div class="program-card closed">
+                    <img src="../images/ministry-tourism-logo.png" alt="Ministry of Tourism">
+                    <h3>Ministry of Tourism</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://online.mt.gov.sa/Surveys/COOP_Program/" target="_blank" class="english">Ministry of Tourism Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">October</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Science, Architecture, Law, Media and Communication, Social Sciences, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- Mobily Program -->
+                <div class="program-card closed">
+                    <img src="../images/mobily-logo.png" alt="Mobily">
+                    <h3>Mobily</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.mobily.com.sa/en/job-search-results/" target="_blank" class="english">Mobily Coop Link</a></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">The program aims to harmonize academic studies with real work environments by training students in specialized tasks during their study periods, supporting Saudization and job localization efforts at the bank.</span></p>
+                </div>
+
+                <!-- SASO Program -->
+                <div class="program-card closed">
+                    <img src="../images/saso-logo.png" alt="SASO">
+                    <h3>SASO</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.saso.gov.sa/ar/eservices/CollaborativeTraining/Pages/default.aspx" target="_blank" class="english">SASO Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Computer and Information Sciences, Law, Media and Communication, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                </div>
+
+                <!-- SFDA Program -->
+                <div class="program-card closed">
+                    <img src="../images/sfda-logo.png" alt="SFDA">
+                    <h3>SFDA</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://careers.sfda.gov.sa/ar/job-search-results/" target="_blank" class="english">SFDA Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">March</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Computer and Information Sciences, Law, Media and Communication, Languages and Translation, Pharmacy</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">The SFDA continuously strives to enhance the knowledge and skills of outstanding students, enabling them to align their academic achievements with professional skills to prepare them for the job market.</span></p>
+                </div>
+
+                <!-- Visa Program -->
+                <div class="program-card closed">
+                    <img src="../images/visa-logo.png" alt="Visa">
+                    <h3>Visa</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://jobs.smartrecruiters.com/Visa/" target="_blank" class="english">Visa Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">September</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Visa's business development team drives the country strategy by identifying and executing opportunities to grow the business through analytics, data, and market intelligence.</span></p>
+                </div>
+
+                <!-- Albilad Bank Program -->
+                <div class="program-card closed">
+                    <img src="../images/albilad-bank-logo.png" alt="Albilad Bank">
+                    <h3>Albilad Bank</h3>
+                    <p><strong class="english-label">Link:</strong> <a href="https://www.bankalbilad.com/en/about/Pages/Training.aspx" target="_blank" class="english">Albilad Bank Coop Link</a></p>
+                    <p><strong class="english-label">Date:</strong> <span class="english">May</span></p>
+                    <p><strong class="english-label">Majors:</strong> <span class="english">Business Administration, Engineering, Computer and Information Sciences, Law, Languages and Translation</span></p>
+                    <p><strong class="english-label">City:</strong> <span class="english">Riyadh</span></p>
+                    <p><strong class="english-label">Notes:</strong> <span class="english">Albilad Bank aims to enhance the knowledge and skills of talented students, enabling them to apply their academic studies in real work environments. This supports Saudization and job localization efforts by offering On-Job Training through the COOP Program.</span></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Data Science Major</p>
+            <p><a href="developer.html">🔗 Meet Our Developers</a></p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript Files -->
+    <script src="../js/script.js"></script>
+    <script src="../js/filterPrograms.js"></script>
+
+  
+</body>
+</html>
