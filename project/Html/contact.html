@@ -115,7 +115,7 @@
 
             // إنشاء عنصر script لإجراء طلب JSONP
             const script = document.createElement('script');
-            script.src = `https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID_HERE/exec?callback=handleResponse&${queryString}`;
+            script.src = `https://script.google.com/macros/s/AKfycbw5cZJ5QWt_qihoC3Vt12-sI7NzbqLBuseZp-02eQlEBCi-mZzSFKrLUx1JRnkVDaUevQ/exec?callback=handleResponse&${queryString}`;
             script.onerror = function() {
                 const confirmation = document.getElementById("confirmation");
                 confirmation.innerHTML = `<p>An error occurred while sending your message.</p>`;
