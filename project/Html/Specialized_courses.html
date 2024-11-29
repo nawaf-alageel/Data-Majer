@@ -1,0 +1,3096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Summaries - Data Science Major</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- Include Font Awesome -->
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-some-integrity-hash"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Hamburger Menu Button for Mobile -->
+            <button class="toggle-header" id="hamburger" onclick="toggleMenu(event)" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-ellipsis-v"></i> <!-- Font Awesome Vertical Ellipsis Icon -->
+            </button>
+
+            <div class="titles">
+                <h3>Specialized Courses</h3>
+            </div>
+
+            <nav id="nav-menu" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="../Html/Home.html">Home</a></li>
+                    <li><a href="../Html/study_plan.html">Study Plan</a></li>
+                    <li><a href="../Html/Specialized_courses.html">Specialized Courses</a></li>
+                    <li><a href="../Html/career_paths.html">Career Paths</a></li>
+                    <li><a href="../Html/certifications.html">Certifications</a></li>
+                    <li><a href="../Html/cooperative-training.html">Cooperative Training Programs</a></li>
+                    <li><a href="../Html/GBA-calculator.html">CGPA Calculator</a></li>
+                    <li><a href="../Html/contact.html">Contact Us</a></li>
+                    <li><a href="../Html/developer.html">Developers</a></li>
+                </ul>
+            </nav>
+        </div>
+                    <!-- Toggle Button for Dark Mode -->
+                    <button class="toggle-button" aria-label="Toggle Dark Mode">🌓</button>
+
+    </header>
+
+    <!-- Legal Notice Modal -->
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+<!-- Close Button -->
+<span class="close-button" onclick="redirectToHome()">&#10006;</span>
+<h1>تنبيه مهم</h1>
+<p>
+  هذا المحتوى ليس له علاقة بجامعة أم القرى، وهو اجتهاد شخصي من الطلاب الذين درسوا هذه المقررات.
+  قاموا بإنشاء هذا الصفحه كجهد لتوحيد مصادر التعلم وترتيبها، بهدف تسهيل الوصول إلى المعلومات والمساعدة في تعزيز التعلم الذاتي.
+  نود التأكيد على أن المحتوى المقدم هو لأغراض تعليمية فقط، ولا يمثل بأي شكل من الأشكال وجهات نظر أو سياسات الجامعة.
+  نحن نشجع الطلاب على استخدام هذا المحتوى كمرجع إضافي للطلاب، والالتزام بسياسات وأخلاقيات الدراسة الأكاديمية.
+</p>
+<button onclick="closeModal()">موافق</button>
+</div>
+</div>
+      
+    <!-- Course Summaries Section -->
+    <main>
+        <section id="course-summaries">
+            <h2>Course Summaries</h2>
+            <p>Below you will find detailed summaries and extensive educational materials for each course in the Data Science major.</p>
+        </section>
+
+        <!-- Course: Introduction to Data Science -->
+        <div class="course-item">
+            <h3>DS2101: Introduction to Data Science</h3>
+            <p><strong>Description:</strong> This course introduces the basics of data science, including data manipulation, visualization, and analysis techniques.</p>
+            <details>
+                <summary>View Summary</summary>
+                <p>This course covers foundational topics in data science, providing students with the skills to work with datasets, perform exploratory analysis, and understand core data science concepts.</p>
+
+                <details>
+                    <summary>Chapters (الفصول)</summary>
+                    <ul>
+                        <li>
+                            <strong>Chapter 1: Understanding Data Science</strong>
+                            <p><a href="https://www.edx.org/course/introduction-to-data-science">Introduction to Data Science - edX</a></p>
+                            <p><a href="https://www.coursera.org/learn/what-is-datascience">What is Data Science? - Coursera</a></p>
+                            <pre><code>
+# Introduction to Data Science concepts
+print("Data Science combines domain expertise, programming skills, and knowledge of mathematics and statistics to extract meaningful insights from data.")
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 2: Data Manipulation with Pandas</strong>
+                            <p><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/index.html">Pandas Documentation</a></p>
+                            <p><a href="https://www.datacamp.com/courses/data-manipulation-with-pandas">Data Manipulation with Pandas - DataCamp</a></p>
+                            <pre><code>
+import pandas as pd
+
+# Load a CSV file into a DataFrame
+df = pd.read_csv('data.csv')
+
+# Display basic information about the DataFrame
+print(df.head())
+print(df.info())
+
+# Selecting columns
+selected_columns = df[['column1', 'column2']]
+
+# Filtering rows
+filtered_df = df[df['column1'] > 50]
+
+# Adding a new column
+df['new_column'] = df['column1'] + df['column2']
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 3: Data Visualization Techniques</strong>
+                            <p><a href="https://seaborn.pydata.org/">Seaborn Documentation</a></p>
+                            <p><a href="https://www.datacamp.com/courses/introduction-to-data-visualization-with-python">Introduction to Data Visualization with Python - DataCamp</a></p>
+                            <pre><code>
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load an example dataset
+tips = sns.load_dataset('tips')
+
+# Create a simple scatter plot
+sns.scatterplot(x='total_bill', y='tip', data=tips)
+plt.title('Total Bill vs Tip')
+plt.show()
+
+# Create a histogram
+sns.histplot(tips['total_bill'], bins=20)
+plt.title('Distribution of Total Bills')
+plt.show()
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 4: Introduction to Machine Learning</strong>
+                            <p><a href="https://scikit-learn.org/stable/">Scikit-learn Documentation</a></p>
+                            <p><a href="https://www.coursera.org/learn/machine-learning">Machine Learning - Coursera</a></p>
+                            <pre><code>
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+
+# Load dataset
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Create and train model
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+
+# Evaluate model
+score = model.score(X_test, y_test)
+print(f'Accuracy: {score}')
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 5: Working with Real-world Data</strong>
+                            <p><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a></p>
+                            <p><a href="https://www.dataquest.io/blog/clean-and-analyze-data-with-pandas/">Data Cleaning and Analysis with Pandas</a></p>
+                            <pre><code>
+import pandas as pd
+import numpy as np
+
+# Load real-world data
+df = pd.read_csv('real_world_data.csv')
+
+# Handle missing values
+df.fillna(method='ffill', inplace=True)
+
+# Data transformation
+df['log_column'] = np.log(df['numerical_column'] + 1)
+
+# Grouping and aggregation
+grouped = df.groupby('category_column').mean()
+
+print(grouped)
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Summaries (الملخصات)</summary>
+                    <ul>
+                        <li>
+                            <strong>Data Science Process Summary</strong>
+                            <p><a href="https://www.kdnuggets.com/2016/03/data-science-process.html">Data Science Process - KDnuggets</a></p>
+                            <p><a href="https://towardsdatascience.com/the-data-science-process-6b8e97268a9d">The Data Science Process - Towards Data Science</a></p>
+                            <pre><code>
+# Steps in the Data Science Process
+steps = [
+    'Define the problem',
+    'Collect data',
+    'Clean and preprocess data',
+    'Perform exploratory data analysis',
+    'Build predictive models',
+    'Evaluate models',
+    'Deploy and monitor models'
+]
+
+for step in steps:
+    print(step)
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Introduction to Python for Data Science</strong>
+                            <p><a href="https://www.python.org/about/gettingstarted/">Python Getting Started - Python.org</a></p>
+                            <p><a href="https://www.learnpython.org/">LearnPython.org</a></p>
+                            <pre><code>
+# Basic Python syntax
+def greet(name):
+    return f'Hello, {name}!'
+
+print(greet('Data Scientist'))
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Final Project (المشروع النهائي)</summary>
+                    <ul>
+                        <li>
+                            <strong>Project: Exploratory Data Analysis on a Real Dataset</strong>
+                            <p><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a></p>
+                            <pre><code>
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv('real_dataset.csv')
+
+# Basic info
+print(df.info())
+print(df.describe())
+
+# Check for missing values
+print(df.isnull().sum())
+
+# Visualize correlations
+corr = df.corr()
+sns.heatmap(corr, annot=True)
+plt.title('Correlation Matrix')
+plt.show()
+
+# Insights
+# - Identify key variables influencing the target
+# - Detect outliers and anomalies
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Project: Building a Simple Predictive Model</strong>
+                            <p><a href="https://scikit-learn.org/stable/tutorial/basic/tutorial.html">Scikit-learn Tutorial</a></p>
+                            <pre><code>
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+# Assuming df is the DataFrame loaded previously
+X = df[['feature1', 'feature2']]
+y = df['target']
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Train model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Predict
+y_pred = model.predict(X_test)
+
+# Evaluate
+mse = mean_squared_error(y_test, y_pred)
+print(f'Mean Squared Error: {mse}')
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+            </details>
+        </div>
+
+        <!-- Course: Applied Statistics for Data Science -->
+        <div class="course-item">
+            <h3>DS2111: Applied Statistics for Data Science</h3>
+            <p><strong>Description:</strong> This course covers fundamental concepts of applied statistics, including probability, hypothesis testing, and data analysis techniques.</p>
+            <details>
+                <summary>View Summary</summary>
+                <p>This course delves into essential statistical methods used in data science, providing students with the skills to analyze and interpret complex datasets.</p>
+
+                <details>
+                    <summary>Chapters (الفصول)</summary>
+                    <ul>
+                        <li>
+                            <strong>Chapter 1: Probability Theory</strong>
+                            <p><a href="https://www.probabilitycourse.com/">Introduction to Probability</a></p>
+                            <p><a href="https://www.khanacademy.org/math/statistics-probability/probability-library">Probability Library - Khan Academy</a></p>
+                            <pre><code>
+# Calculating probabilities
+from scipy.stats import binom
+
+# Probability of getting exactly 3 heads in 5 tosses
+n = 5  # number of trials
+k = 3  # number of successes
+p = 0.5  # probability of success on a single trial
+
+prob = binom.pmf(k, n, p)
+print(f'Probability of exactly 3 heads: {prob}')
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 2: Descriptive Statistics</strong>
+                            <p><a href="https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/">Descriptive Statistics - Statistics How To</a></p>
+                            <p><a href="https://towardsdatascience.com/descriptive-statistics-in-python-2c0f1ed216c3">Descriptive Statistics in Python</a></p>
+                            <pre><code>
+import pandas as pd
+
+# Load data
+data = pd.read_csv('data.csv')
+
+# Calculate measures
+mean = data['column'].mean()
+median = data['column'].median()
+mode = data['column'].mode()[0]
+variance = data['column'].var()
+std_dev = data['column'].std()
+
+print(f'Mean: {mean}, Median: {median}, Mode: {mode}')
+print(f'Variance: {variance}, Standard Deviation: {std_dev}')
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 3: Inferential Statistics</strong>
+                            <p><a href="https://www.coursera.org/learn/inferential-statistics-intro">Inferential Statistics - Coursera</a></p>
+                            <p><a href="https://www.udacity.com/course/intro-to-inferential-statistics--ud201">Intro to Inferential Statistics - Udacity</a></p>
+                            <pre><code>
+from scipy import stats
+
+# One-sample t-test
+sample_data = [2.5, 3.0, 2.8, 3.2, 3.1]
+population_mean = 2.9
+
+t_statistic, p_value = stats.ttest_1samp(sample_data, population_mean)
+print(f'T-statistic: {t_statistic}, P-value: {p_value}')
+
+# Conclusion
+alpha = 0.05
+if p_value < alpha:
+    print('Reject the null hypothesis.')
+else:
+    print('Fail to reject the null hypothesis.')
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 4: Regression Analysis</strong>
+                            <p><a href="https://www.statsmodels.org/stable/regression.html">Regression with Statsmodels</a></p>
+                            <p><a href="https://www.coursera.org/learn/linear-regression-model">Linear Regression Model - Coursera</a></p>
+                            <pre><code>
+import statsmodels.api as sm
+
+# Assuming X and y are defined
+X = sm.add_constant(X)  # adding a constant
+model = sm.OLS(y, X).fit()
+predictions = model.predict(X)
+
+# Print out the statistics
+print(model.summary())
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 5: ANOVA (Analysis of Variance)</strong>
+                            <p><a href="https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/anova/">ANOVA - Statistics How To</a></p>
+                            <p><a href="https://www.coursera.org/learn/one-way-anova">One-Way ANOVA - Coursera</a></p>
+                            <pre><code>
+import pandas as pd
+from scipy import stats
+
+# Load data
+data = pd.read_csv('anova_data.csv')
+
+# Perform ANOVA
+F_statistic, p_value = stats.f_oneway(data['group1'], data['group2'], data['group3'])
+print(f'F-statistic: {F_statistic}, P-value: {p_value}')
+
+# Interpretation
+if p_value < 0.05:
+    print('At least one group mean is significantly different.')
+else:
+    print('No significant differences between group means.')
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Chapter 6: Chi-Square Tests</strong>
+                            <p><a href="https://www.statisticshowto.com/probability-and-statistics/chi-square/">Chi-Square Test - Statistics How To</a></p>
+                            <p><a href="https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests">Chi-Square Tests - Khan Academy</a></p>
+                            <pre><code>
+from scipy.stats import chi2_contingency
+
+# Contingency table
+observed = [[10, 20], [20, 40]]
+
+# Perform Chi-Square Test
+chi2, p, dof, ex = chi2_contingency(observed)
+
+print(f'Chi-square Statistic: {chi2}, P-value: {p}')
+
+# Interpretation
+if p < 0.05:
+    print('There is a significant association between variables.')
+else:
+    print('No significant association between variables.')
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Summaries (الملخصات)</summary>
+                    <ul>
+                        <li>
+                            <strong>Key Concepts in Probability and Statistics</strong>
+                            <p><a href="https://www.openintro.org/stat/">OpenIntro Statistics</a></p>
+                            <p><a href="https://www.mathsisfun.com/data/probability.html">Probability and Statistics - Maths is Fun</a></p>
+                            <pre><code>
+# Fundamental Probability Rules
+print("1. Sum Rule: P(A or B) = P(A) + P(B) - P(A and B)")
+print("2. Product Rule: P(A and B) = P(A) * P(B|A)")
+print("3. Complement Rule: P(Not A) = 1 - P(A)")
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Summary of Hypothesis Testing Steps</strong>
+                            <p><a href="https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/">Hypothesis Testing Steps</a></p>
+                            <pre><code>
+# Steps in Hypothesis Testing
+steps = [
+    'State the null and alternative hypotheses',
+    'Choose the significance level (alpha)',
+    'Calculate the test statistic',
+    'Determine the critical value or p-value',
+    'Make a decision: reject or fail to reject the null hypothesis',
+    'Interpret the results'
+]
+
+for step in steps:
+    print(step)
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Final Project (المشروع النهائي)</summary>
+                    <ul>
+                        <li>
+                            <strong>Project: Comprehensive Statistical Analysis</strong>
+                            <p><a href="https://www.coursera.org/learn/statistical-inferences">Statistical Inferences - Coursera</a></p>
+                            <pre><code>
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+import statsmodels.api as sm
+
+# Load dataset
+df = pd.read_csv('statistical_data.csv')
+
+# Descriptive statistics
+print(df.describe())
+
+# Visualize distributions
+sns.histplot(df['variable'], kde=True)
+plt.title('Distribution of Variable')
+plt.show()
+
+# Hypothesis testing
+group1 = df[df['group'] == 'A']['variable']
+group2 = df[df['group'] == 'B']['variable']
+
+t_stat, p_value = stats.ttest_ind(group1, group2)
+print(f'T-statistic: {t_stat}, P-value: {p_value}')
+
+# Regression analysis
+X = df[['independent_var']]
+y = df['dependent_var']
+X = sm.add_constant(X)
+model = sm.OLS(y, X).fit()
+print(model.summary())
+                            </code></pre>
+                        </li>
+
+                        <li>
+                            <strong>Project: Time Series Analysis</strong>
+                            <p><a href="https://www.analyticsvidhya.com/blog/2021/07/an-introduction-to-time-series-forecasting-with-python/">Time Series Forecasting</a></p>
+                            <pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.arima.model import ARIMA
+
+# Load data
+data = pd.read_csv('time_series_data.csv', parse_dates=['Date'], index_col='Date')
+
+# Plot time series
+data.plot()
+plt.title('Time Series Data')
+plt.show()
+
+# ARIMA model
+model = ARIMA(data, order=(1, 1, 1))
+model_fit = model.fit()
+
+# Forecast
+forecast = model_fit.forecast(steps=10)
+print(forecast)
+                            </code></pre>
+                        </li>
+                    </ul>
+                </details>
+            </details>
+        </div>
+
+
+    </main>
+<!-- Course: Data Collection and Wrangling -->
+<div class="course-item">
+    <h3>DS2212: Data Collection and Wrangling</h3>
+    <p><strong>Description:</strong> This course focuses on collecting, cleaning, and preparing data for analysis in data science projects.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course provides hands-on experience in data acquisition, transformation, and preparation techniques essential for data analysis.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Data Collection from Web Sources</strong>
+                    <p><a href="https://www.datacamp.com/courses/web-scraping-with-python">Web Scraping with Python - DataCamp</a></p>
+                    <p><a href="https://www.coursera.org/learn/data-collection">Data Collection and Processing - Coursera</a></p>
+                    <pre><code>
+import requests
+from bs4 import BeautifulSoup
+
+# Fetch data from a web page
+url = 'https://example.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Find all headlines
+headlines = soup.find_all('h2')
+for headline in headlines:
+    print(headline.text)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: Working with APIs</strong>
+                    <p><a href="https://realpython.com/python-api/">Working with APIs in Python - Real Python</a></p>
+                    <p><a href="https://www.dataquest.io/blog/python-api-tutorial/">Python API Tutorial - Dataquest</a></p>
+                    <pre><code>
+import requests
+
+# Access data from an API
+api_url = 'https://api.example.com/data'
+params = {'key': 'value'}
+response = requests.get(api_url, params=params)
+
+# Check if the request was successful
+if response.status_code == 200:
+    data = response.json()
+    print(data)
+else:
+    print(f'Error: {response.status_code}')
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: Data Cleaning and Preprocessing</strong>
+                    <p><a href="https://www.coursera.org/learn/data-cleaning">Data Cleaning - Coursera</a></p>
+                    <p><a href="https://www.kaggle.com/learn/data-cleaning">Data Cleaning - Kaggle</a></p>
+                    <pre><code>
+import pandas as pd
+
+# Load data with missing values
+df = pd.read_csv('data_with_missing_values.csv')
+
+# Check for missing values
+print(df.isnull().sum())
+
+# Fill missing numerical values with mean
+df['numerical_column'].fillna(df['numerical_column'].mean(), inplace=True)
+
+# Drop rows with missing categorical values
+df.dropna(subset=['categorical_column'], inplace=True)
+
+# Convert data types
+df['date_column'] = pd.to_datetime(df['date_column'])
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Data Transformation and Feature Engineering</strong>
+                    <p><a href="https://www.datacamp.com/courses/feature-engineering-for-nlp-in-python">Feature Engineering - DataCamp</a></p>
+                    <p><a href="https://www.coursera.org/learn/feature-engineering">Feature Engineering - Coursera</a></p>
+                    <pre><code>
+import pandas as pd
+import numpy as np
+
+# Create new features
+df['total_sales'] = df['quantity'] * df['unit_price']
+
+# Encode categorical variables
+df = pd.get_dummies(df, columns=['category'])
+
+# Normalize numerical features
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+df['normalized_column'] = scaler.fit_transform(df[['numerical_column']])
+
+# Handle outliers
+Q1 = df['numerical_column'].quantile(0.25)
+Q3 = df['numerical_column'].quantile(0.75)
+IQR = Q3 - Q1
+df = df[~((df['numerical_column'] < (Q1 - 1.5 * IQR)) | (df['numerical_column'] > (Q3 + 1.5 * IQR)))]
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Working with Databases</strong>
+                    <p><a href="https://www.sqlalchemy.org/">SQLAlchemy Documentation</a></p>
+                    <p><a href="https://realpython.com/python-sql-libraries/">Connecting Python and SQL Databases</a></p>
+                    <pre><code>
+from sqlalchemy import create_engine
+import pandas as pd
+
+# Create a database connection
+engine = create_engine('sqlite:///database.db')
+
+# Read data from a SQL table
+df = pd.read_sql('SELECT * FROM table_name', engine)
+
+# Write DataFrame to SQL table
+df.to_sql('new_table', engine, if_exists='replace', index=False)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: Handling Big Data with PySpark</strong>
+                    <p><a href="https://spark.apache.org/docs/latest/api/python/">PySpark Documentation</a></p>
+                    <p><a href="https://www.datacamp.com/courses/introduction-to-pyspark">Introduction to PySpark - DataCamp</a></p>
+                    <pre><code>
+from pyspark.sql import SparkSession
+
+# Initialize SparkSession
+spark = SparkSession.builder.appName('DataWrangling').getOrCreate()
+
+# Load data
+df = spark.read.csv('large_dataset.csv', header=True, inferSchema=True)
+
+# Data transformation
+df_filtered = df.filter(df['column'] > 50)
+
+# Show results
+df_filtered.show()
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Practical Exercises (التطبيق العملي)</summary>
+            <ul>
+                <li>
+                    <strong>Exercise: Web Scraping Project</strong>
+                    <p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup Documentation</a></p>
+                    <pre><code>
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Scrape data from multiple pages
+titles = []
+prices = []
+for page in range(1, 6):
+    url = f'https://example.com/products?page={page}'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # Extract product titles and prices
+    for product in soup.find_all('div', class_='product'):
+        title = product.find('h2').text
+        price = product.find('span', class_='price').text
+        titles.append(title)
+        prices.append(price)
+
+# Create a DataFrame
+df = pd.DataFrame({'Title': titles, 'Price': prices})
+print(df.head())
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Cleaning a Messy Dataset</strong>
+                    <p><a href="https://www.kaggle.com/rtatman/data-cleaning-challenge-handling-missing-values">Data Cleaning Challenge - Kaggle</a></p>
+                    <pre><code>
+import pandas as pd
+
+# Load messy data
+df = pd.read_csv('messy_data.csv')
+
+# Identify duplicate rows
+duplicates = df[df.duplicated()]
+print(f'Duplicate rows: {len(duplicates)}')
+
+# Remove duplicates
+df.drop_duplicates(inplace=True)
+
+# Fix inconsistent data entries
+df['category'] = df['category'].str.lower().str.strip()
+
+# Correct misspelled entries
+df['category'].replace({'technlogy': 'technology', 'busines': 'business'}, inplace=True)
+
+# Verify data cleaning
+print(df['category'].unique())
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Data Transformation and Merging</strong>
+                    <p><a href="https://pandas.pydata.org/docs/user_guide/merging.html">Merging and Joining DataFrames</a></p>
+                    <pre><code>
+import pandas as pd
+
+# Load datasets
+df_customers = pd.read_csv('customers.csv')
+df_orders = pd.read_csv('orders.csv')
+
+# Merge datasets
+df_merged = pd.merge(df_customers, df_orders, on='customer_id', how='inner')
+
+# Create new features
+df_merged['order_value'] = df_merged['quantity'] * df_merged['price']
+
+# Aggregate data
+df_summary = df_merged.groupby('customer_id')['order_value'].sum().reset_index()
+print(df_summary.head())
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Final Projects (المشاريع النهائية)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Building a Data Pipeline</strong>
+                    <p><a href="https://airflow.apache.org/">Apache Airflow Documentation</a></p>
+                    <pre><code>
+# Example of setting up an Airflow DAG for data pipeline
+
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
+from datetime import datetime
+
+def extract_data():
+    # Code to extract data from source
+    pass
+
+def transform_data():
+    # Code to clean and transform data
+    pass
+
+def load_data():
+    # Code to load data into destination
+    pass
+
+default_args = {
+    'owner': 'airflow',
+    'start_date': datetime(2024, 1, 1),
+    'retries': 1,
+}
+
+dag = DAG('data_pipeline', default_args=default_args, schedule_interval='@daily')
+
+extract_task = PythonOperator(task_id='extract_data', python_callable=extract_data, dag=dag)
+transform_task = PythonOperator(task_id='transform_data', python_callable=transform_data, dag=dag)
+load_task = PythonOperator(task_id='load_data', python_callable=load_data, dag=dag)
+
+extract_task >> transform_task >> load_task
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Data Wrangling and Visualization</strong>
+                    <p><a href="https://www.tableau.com/">Tableau Software</a></p>
+                    <p><a href="https://powerbi.microsoft.com/">Microsoft Power BI</a></p>
+                    <pre><code>
+# Since Tableau and Power BI are GUI-based tools, code examples are limited.
+
+# For Python-based visualization:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load and clean data
+df = pd.read_csv('cleaned_data.csv')
+
+# Create visualizations
+plt.figure(figsize=(10,6))
+sns.barplot(x='category', y='sales', data=df)
+plt.title('Sales by Category')
+plt.show()
+
+# Save the figure
+plt.savefig('sales_by_category.png')
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Data Integration from Multiple Sources</strong>
+                    <p><a href="https://pandas.pydata.org/">Pandas Documentation</a></p>
+                    <pre><code>
+import pandas as pd
+
+# Read data from CSV
+df_csv = pd.read_csv('data1.csv')
+
+# Read data from Excel
+df_excel = pd.read_excel('data2.xlsx')
+
+# Read data from JSON
+df_json = pd.read_json('data3.json')
+
+# Merge datasets
+df_combined = pd.concat([df_csv, df_excel, df_json], ignore_index=True)
+
+# Clean and process combined data
+df_combined.dropna(inplace=True)
+df_combined['date'] = pd.to_datetime(df_combined['date'])
+
+# Analyze data
+print(df_combined.groupby('category')['value'].mean())
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+<!-- Course: Data Structures -->
+<div class="course-item">
+    <h3>DS2221: Data Structures</h3>
+    <p><strong>Description:</strong> This course covers fundamental concepts of data structures, including linear and non-linear structures, and their applications in computer science.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course explores various data structures used in programming, providing insights into their design, implementation, and real-world use cases.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Introduction to Data Structures</strong>
+                    <p><a href="https://www.geeksforgeeks.org/data-structures/">Data Structures - GeeksforGeeks</a></p>
+                    <p><a href="https://www.coursera.org/learn/data-structures">Data Structures - Coursera</a></p>
+                    <pre><code>
+# Understanding the importance of data structures
+print("Data structures are fundamental concepts that help in organizing data efficiently for various operations.")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: Arrays and Lists</strong>
+                    <p><a href="https://docs.python.org/3/tutorial/datastructures.html">Python Data Structures - Official Documentation</a></p>
+                    <p><a href="https://www.w3schools.com/python/python_lists.asp">Python Lists - W3Schools</a></p>
+                    <pre><code>
+# Working with arrays and lists
+# Lists in Python
+my_list = [1, 2, 3, 4, 5]
+print("Original List:", my_list)
+
+# Accessing elements
+print("First element:", my_list[0])
+
+# Modifying elements
+my_list[2] = 10
+print("Modified List:", my_list)
+
+# Appending elements
+my_list.append(6)
+print("List after appending:", my_list)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: Linked Lists</strong>
+                    <p><a href="https://www.geeksforgeeks.org/data-structures/linked-list/">Linked Lists - GeeksforGeeks</a></p>
+                    <p><a href="https://www.programiz.com/dsa/linked-list">Linked List Data Structure - Programiz</a></p>
+                    <pre><code>
+# Implementing a simple linked list in Python
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# Creating nodes
+node1 = Node('A')
+node2 = Node('B')
+node3 = Node('C')
+
+# Linking nodes
+node1.next = node2
+node2.next = node3
+
+# Traversing the linked list
+current_node = node1
+while current_node is not None:
+    print(current_node.data)
+    current_node = current_node.next
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Stacks and Queues</strong>
+                    <p><a href="https://realpython.com/how-to-implement-python-stack/">Implementing Stacks in Python - Real Python</a></p>
+                    <p><a href="https://realpython.com/queue-in-python/">Queues in Python - Real Python</a></p>
+                    <pre><code>
+# Implementing a stack using a list
+stack = []
+
+# Pushing elements onto the stack
+stack.append('A')
+stack.append('B')
+stack.append('C')
+print("Stack after pushes:", stack)
+
+# Popping elements from the stack
+print("Popped element:", stack.pop())
+print("Stack after pop:", stack)
+
+# Implementing a queue using collections.deque
+from collections import deque
+
+queue = deque()
+
+# Enqueue elements
+queue.append('X')
+queue.append('Y')
+queue.append('Z')
+print("Queue after enqueues:", queue)
+
+# Dequeue elements
+print("Dequeued element:", queue.popleft())
+print("Queue after dequeue:", queue)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Trees</strong>
+                    <p><a href="https://www.geeksforgeeks.org/binary-tree-data-structure/">Binary Trees - GeeksforGeeks</a></p>
+                    <p><a href="https://www.programiz.com/dsa/binary-tree">Binary Tree Data Structure - Programiz</a></p>
+                    <pre><code>
+# Implementing a binary tree node in Python
+
+class TreeNode:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+# Creating nodes
+root = TreeNode('Root')
+root.left = TreeNode('Left')
+root.right = TreeNode('Right')
+
+# Traversing the tree (In-order traversal)
+def inorder_traversal(node):
+    if node:
+        inorder_traversal(node.left)
+        print(node.data)
+        inorder_traversal(node.right)
+
+inorder_traversal(root)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: Graphs</strong>
+                    <p><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">Graph Data Structure - GeeksforGeeks</a></p>
+                    <p><a href="https://www.programiz.com/dsa/graph">Graph Data Structure - Programiz</a></p>
+                    <pre><code>
+# Representing a graph using an adjacency list
+
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D'],
+    'C': ['A', 'D'],
+    'D': ['B', 'C']
+}
+
+# Breadth-First Search (BFS)
+def bfs(graph, start):
+    visited = set()
+    queue = [start]
+    while queue:
+        vertex = queue.pop(0)
+        if vertex not in visited:
+            print(vertex)
+            visited.add(vertex)
+            queue.extend(set(graph[vertex]) - visited)
+
+bfs(graph, 'A')
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 7: Hash Tables</strong>
+                    <p><a href="https://www.geeksforgeeks.org/hashing-data-structure/">Hashing Data Structure - GeeksforGeeks</a></p>
+                    <p><a href="https://www.programiz.com/dsa/hash-table">Hash Table Data Structure - Programiz</a></p>
+                    <pre><code>
+# Using dictionaries in Python as hash tables
+
+hash_table = {}
+
+# Inserting key-value pairs
+hash_table['key1'] = 'value1'
+hash_table['key2'] = 'value2'
+
+# Accessing values
+print(hash_table['key1'])
+
+# Checking for keys
+if 'key2' in hash_table:
+    print("Key2 is present")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 8: Heaps and Priority Queues</strong>
+                    <p><a href="https://docs.python.org/3/library/heapq.html">heapq Module - Python Documentation</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/heap-data-structure/">Heap Data Structure - GeeksforGeeks</a></p>
+                    <pre><code>
+import heapq
+
+# Creating a min-heap
+heap = []
+
+# Adding elements
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 15)
+
+print("Heap:", heap)
+
+# Removing the smallest element
+smallest = heapq.heappop(heap)
+print("Smallest element:", smallest)
+print("Heap after pop:", heap)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 9: Advanced Data Structures</strong>
+                    <p><a href="https://www.geeksforgeeks.org/trie-insert-and-search/">Trie Data Structure - GeeksforGeeks</a></p>
+                    <p><a href="https://www.programiz.com/dsa/trie">Trie Data Structure - Programiz</a></p>
+                    <pre><code>
+# Implementing a simple Trie (Prefix Tree) in Python
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    # Insert a word into the trie
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_end_of_word = True
+
+    # Search for a word in the trie
+    def search(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+        return node.is_end_of_word
+
+# Usage
+trie = Trie()
+trie.insert("hello")
+trie.insert("helium")
+
+print(trie.search("hello"))   # Output: True
+print(trie.search("helix"))   # Output: False
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Practical Exercises (التطبيق العملي)</summary>
+            <ul>
+                <li>
+                    <strong>Exercise: Implementing a Stack Class</strong>
+                    <p><a href="https://www.geeksforgeeks.org/stack-in-python/">Stack Implementation in Python</a></p>
+                    <pre><code>
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def push(self, item):
+        self.items.append(item)
+        print(f"Pushed {item}")
+
+    def pop(self):
+        if not self.is_empty():
+            item = self.items.pop()
+            print(f"Popped {item}")
+            return item
+        else:
+            print("Stack is empty")
+            return None
+
+# Testing the Stack
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Implementing a Queue Class</strong>
+                    <p><a href="https://www.geeksforgeeks.org/queue-in-python/">Queue Implementation in Python</a></p>
+                    <pre><code>
+class Queue:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def enqueue(self, item):
+        self.items.insert(0, item)
+        print(f"Enqueued {item}")
+
+    def dequeue(self):
+        if not self.is_empty():
+            item = self.items.pop()
+            print(f"Dequeued {item}")
+            return item
+        else:
+            print("Queue is empty")
+            return None
+
+# Testing the Queue
+queue = Queue()
+queue.enqueue('A')
+queue.enqueue('B')
+queue.enqueue('C')
+queue.dequeue()
+queue.dequeue()
+queue.dequeue()
+queue.dequeue()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Binary Search Tree Operations</strong>
+                    <p><a href="https://www.programiz.com/dsa/binary-search-tree">Binary Search Tree - Programiz</a></p>
+                    <pre><code>
+class BSTNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+
+# Insert a node
+def insert(node, key):
+    if node is None:
+        return BSTNode(key)
+    if key < node.key:
+        node.left = insert(node.left, key)
+    else:
+        node.right = insert(node.right, key)
+    return node
+
+# Search for a node
+def search(node, key):
+    if node is None or node.key == key:
+        return node
+    if key < node.key:
+        return search(node.left, key)
+    else:
+        return search(node.right, key)
+
+# In-order traversal
+def inorder(node):
+    if node:
+        inorder(node.left)
+        print(node.key)
+        inorder(node.right)
+
+# Testing the BST
+root = None
+keys = [20, 10, 30, 5, 15, 25, 35]
+for key in keys:
+    root = insert(root, key)
+
+print("In-order traversal:")
+inorder(root)
+
+# Search for a key
+result = search(root, 25)
+if result:
+    print(f"Key {result.key} found in the BST.")
+else:
+    print("Key not found in the BST.")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Graph Traversal Algorithms</strong>
+                    <p><a href="https://www.programiz.com/dsa/graph-bfs">Breadth-First Search - Programiz</a></p>
+                    <p><a href="https://www.programiz.com/dsa/graph-dfs">Depth-First Search - Programiz</a></p>
+                    <pre><code>
+# Graph represented using adjacency lists
+
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
+}
+
+# Depth-First Search (DFS)
+def dfs(graph, vertex, visited=None):
+    if visited is None:
+        visited = set()
+    visited.add(vertex)
+    print(vertex)
+    for neighbor in graph[vertex]:
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited)
+
+print("DFS Traversal:")
+dfs(graph, 'A')
+
+# Breadth-First Search (BFS)
+def bfs(graph, start):
+    visited = set()
+    queue = [start]
+    visited.add(start)
+    while queue:
+        vertex = queue.pop(0)
+        print(vertex)
+        for neighbor in graph[vertex]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+
+print("\nBFS Traversal:")
+bfs(graph, 'A')
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Final Projects (المشاريع النهائية)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Implementing a LRU Cache</strong>
+                    <p><a href="https://www.programiz.com/python-programming/linked-list">Linked Lists in Python</a></p>
+                    <pre><code>
+# Implementing Least Recently Used (LRU) Cache using OrderedDict
+
+from collections import OrderedDict
+
+class LRUCache:
+    def __init__(self, capacity):
+        self.cache = OrderedDict()
+        self.capacity = capacity
+
+    def get(self, key):
+        if key in self.cache:
+            self.cache.move_to_end(key)
+            print(f"Accessed {key}: {self.cache[key]}")
+            return self.cache[key]
+        else:
+            print(f"{key} not found in cache.")
+            return -1
+
+    def put(self, key, value):
+        self.cache[key] = value
+        print(f"Inserted/Updated {key}: {value}")
+        self.cache.move_to_end(key)
+        if len(self.cache) > self.capacity:
+            oldest = self.cache.popitem(last=False)
+            print(f"Removed oldest entry: {oldest}")
+
+# Testing the LRUCache
+cache = LRUCache(3)
+cache.put(1, 'A')
+cache.put(2, 'B')
+cache.put(3, 'C')
+cache.get(2)
+cache.put(4, 'D')  # This should remove key 1
+cache.get(1)       # Should return -1 (not found)
+cache.get(3)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Building a Simple Text Autocomplete System</strong>
+                    <p><a href="https://www.geeksforgeeks.org/trie-insert-and-search/">Trie Data Structure</a></p>
+                    <pre><code>
+# Implementing an autocomplete feature using Trie
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+
+class AutocompleteSystem:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_end_of_word = True
+
+    def autocomplete(self, prefix):
+        results = []
+        node = self.root
+        # Traverse to the end of the prefix
+        for char in prefix:
+            if char in node.children:
+                node = node.children[char]
+            else:
+                return results  # No words with given prefix
+        # Recursive helper function to find all words
+        self._find_words(node, prefix, results)
+        return results
+
+    def _find_words(self, node, prefix, results):
+        if node.is_end_of_word:
+            results.append(prefix)
+        for char, child_node in node.children.items():
+            self._find_words(child_node, prefix + char, results)
+
+# Usage
+autocomplete = AutocompleteSystem()
+words = ['hello', 'helium', 'helicopter', 'help', 'held', 'hero', 'heron']
+for word in words:
+    autocomplete.insert(word)
+
+prefix = 'hel'
+suggestions = autocomplete.autocomplete(prefix)
+print(f"Suggestions for '{prefix}': {suggestions}")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Simulating a File System with Trees</strong>
+                    <p><a href="https://www.geeksforgeeks.org/python-program-to-convert-a-directory-structure-in-to-a-tree-structure/">Directory Structure as Tree</a></p>
+                    <pre><code>
+# Simulating a simple file system using a tree structure
+
+class FileNode:
+    def __init__(self, name, is_directory=False):
+        self.name = name
+        self.children = []
+        self.is_directory = is_directory
+
+    def add_child(self, child):
+        self.children.append(child)
+
+    def display(self, level=0):
+        indent = ' ' * level * 4
+        prefix = '[D] ' if self.is_directory else '[F] '
+        print(f"{indent}{prefix}{self.name}")
+        for child in self.children:
+            child.display(level + 1)
+
+# Building the file system
+root = FileNode('root', True)
+folder1 = FileNode('folder1', True)
+folder2 = FileNode('folder2', True)
+file1 = FileNode('file1.txt')
+file2 = FileNode('file2.txt')
+file3 = FileNode('file3.txt')
+
+root.add_child(folder1)
+root.add_child(file1)
+folder1.add_child(folder2)
+folder1.add_child(file2)
+folder2.add_child(file3)
+
+# Display the file system
+root.display()
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+<!-- Course: Database Fundamentals -->
+<div class="course-item">
+    <h3>CS2231: Database Fundamentals</h3>
+    <p><strong>Description:</strong> This course covers the fundamental concepts of databases, including database design, implementation, and management.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course provides an introduction to relational databases, SQL, and essential database management concepts.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Introduction to Databases</strong>
+                    <p><a href="https://www.coursera.org/learn/database-management">Database Management Essentials - Coursera</a></p>
+                    <p><a href="https://www.w3schools.com/sql/sql_intro.asp">SQL Introduction - W3Schools</a></p>
+                    <pre><code>
+-- Understanding the basics of databases
+-- Definition of a database
+-- Advantages of using databases
+-- Types of database models (Relational, NoSQL, etc.)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: Relational Database Concepts</strong>
+                    <p><a href="https://www.tutorialspoint.com/sql/sql-rdbms-concepts.htm">RDBMS Concepts - TutorialsPoint</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/">Introduction to DBMS - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Understanding tables, records, and fields
+-- Primary keys and foreign keys
+-- Relationships (one-to-one, one-to-many, many-to-many)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: SQL Basics</strong>
+                    <p><a href="https://www.w3schools.com/sql/">SQL Tutorial - W3Schools</a></p>
+                    <p><a href="https://www.codecademy.com/learn/learn-sql">Learn SQL - Codecademy</a></p>
+                    <pre><code>
+-- Creating a database
+CREATE DATABASE SchoolDB;
+
+-- Using a database
+USE SchoolDB;
+
+-- Creating a table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Major VARCHAR(50)
+);
+
+-- Inserting data into a table
+INSERT INTO Students (StudentID, FirstName, LastName, Age, Major)
+VALUES (1, 'Alice', 'Smith', 20, 'Computer Science'),
+       (2, 'Bob', 'Johnson', 22, 'Mathematics');
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Data Retrieval with SELECT</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_select.asp">SQL SELECT Statement - W3Schools</a></p>
+                    <pre><code>
+-- Selecting all columns
+SELECT * FROM Students;
+
+-- Selecting specific columns
+SELECT FirstName, Major FROM Students;
+
+-- Filtering records with WHERE
+SELECT * FROM Students WHERE Age > 21;
+
+-- Sorting results with ORDER BY
+SELECT * FROM Students ORDER BY LastName ASC;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Data Manipulation</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_update.asp">SQL UPDATE Statement - W3Schools</a></p>
+                    <pre><code>
+-- Updating records
+UPDATE Students SET Major = 'Physics' WHERE StudentID = 2;
+
+-- Deleting records
+DELETE FROM Students WHERE StudentID = 1;
+
+-- Adding a new column
+ALTER TABLE Students ADD Email VARCHAR(100);
+
+-- Modifying a column
+ALTER TABLE Students MODIFY COLUMN Age INT NOT NULL;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: SQL Functions and Aggregations</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_functions.asp">SQL Functions - W3Schools</a></p>
+                    <pre><code>
+-- Using aggregate functions
+SELECT COUNT(*) AS TotalStudents FROM Students;
+SELECT AVG(Age) AS AverageAge FROM Students;
+
+-- Grouping data
+SELECT Major, COUNT(*) AS StudentsInMajor
+FROM Students
+GROUP BY Major;
+
+-- Filtering groups with HAVING
+SELECT Major, COUNT(*) AS StudentsInMajor
+FROM Students
+GROUP BY Major
+HAVING COUNT(*) > 5;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 7: Joining Tables</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_join.asp">SQL JOIN - W3Schools</a></p>
+                    <pre><code>
+-- Creating another table
+CREATE TABLE Enrollments (
+    EnrollmentID INT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
+
+-- Inner Join
+SELECT Students.FirstName, Enrollments.CourseID
+FROM Students
+INNER JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;
+
+-- Left Join
+SELECT Students.FirstName, Enrollments.CourseID
+FROM Students
+LEFT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;
+
+-- Right Join
+SELECT Students.FirstName, Enrollments.CourseID
+FROM Students
+RIGHT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 8: Database Normalization</strong>
+                    <p><a href="https://www.studytonight.com/dbms/database-normalization.php">Database Normalization - StudyTonight</a></p>
+                    <p><a href="https://www.guru99.com/database-normalization.html">Normalization in DBMS - Guru99</a></p>
+                    <pre><code>
+-- Understanding normalization forms
+-- First Normal Form (1NF)
+-- Second Normal Form (2NF)
+-- Third Normal Form (3NF)
+-- Examples of normalizing a database schema
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 9: Transactions and Concurrency</strong>
+                    <p><a href="https://www.w3schools.in/dbms/transaction/">Database Transactions - W3Schools</a></p>
+                    <pre><code>
+-- Starting a transaction
+BEGIN TRANSACTION;
+
+-- Performing operations
+UPDATE Accounts SET Balance = Balance - 500 WHERE AccountID = 1;
+UPDATE Accounts SET Balance = Balance + 500 WHERE AccountID = 2;
+
+-- Committing the transaction
+COMMIT;
+
+-- Rolling back a transaction
+ROLLBACK;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 10: Stored Procedures and Triggers</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp">SQL Stored Procedures - W3Schools</a></p>
+                    <pre><code>
+-- Creating a stored procedure
+CREATE PROCEDURE GetStudentMajor(IN student_id INT)
+BEGIN
+    SELECT Major FROM Students WHERE StudentID = student_id;
+END;
+
+-- Calling a stored procedure
+CALL GetStudentMajor(2);
+
+-- Creating a trigger
+CREATE TRIGGER UpdateTimestamp
+BEFORE UPDATE ON Students
+FOR EACH ROW
+BEGIN
+    SET NEW.LastUpdated = NOW();
+END;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 11: Indexes and Optimization</strong>
+                    <p><a href="https://www.w3schools.com/sql/sql_indexes.asp">SQL Indexes - W3Schools</a></p>
+                    <p><a href="https://use-the-index-luke.com/">SQL Performance Explained - Use The Index, Luke!</a></p>
+                    <pre><code>
+-- Creating an index
+CREATE INDEX idx_major ON Students(Major);
+
+-- Checking query performance
+EXPLAIN SELECT * FROM Students WHERE Major = 'Computer Science';
+
+-- Removing an index
+DROP INDEX idx_major ON Students;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 12: Introduction to NoSQL Databases</strong>
+                    <p><a href="https://www.mongodb.com/nosql-explained">NoSQL Explained - MongoDB</a></p>
+                    <p><a href="https://www.coursera.org/learn/introduction-virtualization-nosql">Introduction to NoSQL Databases - Coursera</a></p>
+                    <pre><code>
+-- Understanding the differences between SQL and NoSQL
+-- Types of NoSQL databases (Document, Key-Value, Column-Family, Graph)
+-- Basic operations in MongoDB
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Practical Exercises (التطبيق العملي)</summary>
+            <ul>
+                <li>
+                    <strong>Exercise: Designing a Simple Database Schema</strong>
+                    <p><a href="https://www.lucidchart.com/pages/how-to-draw-erd">How to Draw ER Diagrams - Lucidchart</a></p>
+                    <pre><code>
+-- Use an ER diagram tool to design a database schema for a library system.
+-- Entities: Books, Authors, Members, Loans
+-- Define relationships and cardinality between entities.
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Writing Complex SQL Queries</strong>
+                    <p><a href="https://www.hackerrank.com/domains/sql">SQL Practice Problems - HackerRank</a></p>
+                    <pre><code>
+-- Query to find students who are enrolled in more than 3 courses
+SELECT Students.FirstName, Students.LastName, COUNT(Enrollments.CourseID) AS CourseCount
+FROM Students
+JOIN Enrollments ON Students.StudentID = Enrollments.StudentID
+GROUP BY Students.StudentID
+HAVING COUNT(Enrollments.CourseID) > 3;
+
+-- Query to list all courses that have no students enrolled
+SELECT Courses.CourseID, Courses.CourseName
+FROM Courses
+LEFT JOIN Enrollments ON Courses.CourseID = Enrollments.CourseID
+WHERE Enrollments.CourseID IS NULL;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Implementing Transactions</strong>
+                    <p><a href="https://www.postgresql.org/docs/current/tutorial-transactions.html">Transactions in PostgreSQL</a></p>
+                    <pre><code>
+-- Simulate a bank transfer between two accounts
+BEGIN TRANSACTION;
+
+-- Debit from account A
+UPDATE Accounts SET Balance = Balance - 1000 WHERE AccountID = 101;
+
+-- Credit to account B
+UPDATE Accounts SET Balance = Balance + 1000 WHERE AccountID = 202;
+
+-- Check if balances are sufficient and commit or rollback
+IF (SELECT Balance FROM Accounts WHERE AccountID = 101) >= 0 THEN
+    COMMIT;
+ELSE
+    ROLLBACK;
+END IF;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Creating Stored Procedures</strong>
+                    <p><a href="https://dev.mysql.com/doc/connector-python/en/connector-python-example-cursor-transaction.html">MySQL Connector/Python</a></p>
+                    <pre><code>
+-- Create a stored procedure to calculate the GPA of a student
+CREATE PROCEDURE CalculateGPA(IN student_id INT, OUT gpa DECIMAL(3,2))
+BEGIN
+    SELECT AVG(Grade) INTO gpa
+    FROM Grades
+    WHERE StudentID = student_id;
+END;
+
+-- Call the stored procedure
+CALL CalculateGPA(2, @gpa);
+SELECT @gpa AS GPA;
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Final Projects (المشاريع النهائية)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Developing a Student Management System</strong>
+                    <p><a href="https://www.mysql.com/">MySQL Database</a></p>
+                    <pre><code>
+-- Design and implement a database for managing student records, courses, enrollments, and grades.
+-- Include tables: Students, Courses, Enrollments, Grades, Instructors.
+-- Implement stored procedures for common operations like enrolling a student in a course.
+-- Ensure data integrity with appropriate constraints and triggers.
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Building a Simple Blog Platform Database</strong>
+                    <p><a href="https://www.sqlite.org/index.html">SQLite Database</a></p>
+                    <pre><code>
+-- Design a database schema for a blog platform.
+-- Tables: Users, Posts, Comments, Categories, Tags.
+-- Implement features:
+   - Users can create posts.
+   - Posts can have multiple tags and categories.
+   - Users can comment on posts.
+-- Write SQL queries to retrieve posts by category, tag, or author.
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Implementing a NoSQL Database Solution</strong>
+                    <p><a href="https://www.mongodb.com/">MongoDB</a></p>
+                    <pre><code>
+# Install MongoDB and use it to store and retrieve data for a simple application.
+
+# Create collections:
+# - products
+# - customers
+# - orders
+
+# Insert documents into collections:
+db.products.insertMany([
+    { "_id": 1, "name": "Laptop", "price": 999.99 },
+    { "_id": 2, "name": "Smartphone", "price": 499.99 }
+])
+
+# Query documents:
+db.products.find({ "price": { "$gt": 500 } })
+
+# Implement relationships by embedding or referencing documents.
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Database Performance Tuning</strong>
+                    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/optimization.html">MySQL Optimization</a></p>
+                    <pre><code>
+-- Analyze query performance using EXPLAIN
+EXPLAIN SELECT * FROM Orders WHERE OrderDate = '2024-01-01';
+
+-- Identify slow queries and optimize them
+-- Add indexes where necessary
+CREATE INDEX idx_order_date ON Orders(OrderDate);
+
+-- Monitor the impact of indexes on performance
+-- Adjust server configurations for optimal performance
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+<!-- Course: Data Analysis 1 -->
+<div class="course-item">
+    <h3>DS2313: Data Analysis 1</h3>
+    <p><strong>Description:</strong> This course introduces fundamental concepts of data analysis, including exploratory data analysis, visualization, and basic statistical methods.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course covers techniques for analyzing and visualizing data, providing students with skills to understand data patterns and perform preliminary analysis.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Introduction to Exploratory Data Analysis (EDA)</strong>
+                    <p><a href="https://www.datacamp.com/courses/exploratory-data-analysis-in-python">Exploratory Data Analysis - DataCamp</a></p>
+                    <p><a href="https://www.coursera.org/learn/data-analysis-with-python">Data Analysis with Python - Coursera</a></p>
+                    <pre><code>
+import pandas as pd
+
+# Load data
+data = pd.read_csv('https://example.com/dataset.csv')
+
+# Overview of the data
+print(data.head())
+print(data.info())
+print(data.describe())
+
+# Check for missing values
+print(data.isnull().sum())
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: Data Visualization Techniques</strong>
+                    <p><a href="https://www.coursera.org/learn/data-visualization">Data Visualization - Coursera</a></p>
+                    <p><a href="https://matplotlib.org/stable/tutorials/introductory/pyplot.html">Matplotlib Pyplot Tutorial</a></p>
+                    <pre><code>
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Histogram
+plt.hist(data['column_name'], bins=30)
+plt.title('Histogram of Column Name')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+
+# Scatter plot
+plt.scatter(data['column_x'], data['column_y'])
+plt.title('Scatter Plot of Column X vs Column Y')
+plt.xlabel('Column X')
+plt.ylabel('Column Y')
+plt.show()
+
+# Box plot
+sns.boxplot(x='categorical_column', y='numerical_column', data=data)
+plt.title('Box Plot of Numerical Column by Categorical Column')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: Statistical Measures and Analysis</strong>
+                    <p><a href="https://www.khanacademy.org/math/statistics-probability">Statistics and Probability - Khan Academy</a></p>
+                    <p><a href="https://www.statisticshowto.com/">Statistics How To</a></p>
+                    <pre><code>
+import numpy as np
+
+# Calculate measures of central tendency
+mean = np.mean(data['numerical_column'])
+median = np.median(data['numerical_column'])
+mode = data['numerical_column'].mode()[0]
+
+print(f"Mean: {mean}, Median: {median}, Mode: {mode}")
+
+# Calculate measures of dispersion
+std_dev = np.std(data['numerical_column'])
+variance = np.var(data['numerical_column'])
+
+print(f"Standard Deviation: {std_dev}, Variance: {variance}")
+
+# Correlation matrix
+corr_matrix = data.corr()
+print(corr_matrix)
+
+# Visualize the correlation matrix
+sns.heatmap(corr_matrix, annot=True)
+plt.title('Correlation Matrix')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Hypothesis Testing</strong>
+                    <p><a href="https://www.coursera.org/learn/statistical-inferences">Statistical Inferences - Coursera</a></p>
+                    <p><a href="https://www.datacamp.com/courses/hypothesis-testing-in-python">Hypothesis Testing in Python - DataCamp</a></p>
+                    <pre><code>
+from scipy import stats
+
+# Perform a t-test
+group1 = data[data['group'] == 'A']['numerical_column']
+group2 = data[data['group'] == 'B']['numerical_column']
+
+t_stat, p_value = stats.ttest_ind(group1, group2)
+print(f"T-statistic: {t_stat}, P-value: {p_value}")
+
+# Interpret the results
+alpha = 0.05
+if p_value < alpha:
+    print("Reject the null hypothesis.")
+else:
+    print("Fail to reject the null hypothesis.")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Introduction to Regression Analysis</strong>
+                    <p><a href="https://www.statsmodels.org/stable/regression.html">Regression with Statsmodels</a></p>
+                    <p><a href="https://www.coursera.org/learn/linear-regression-model">Linear Regression Model - Coursera</a></p>
+                    <pre><code>
+import statsmodels.api as sm
+
+# Define the independent variables (X) and dependent variable (y)
+X = data[['feature1', 'feature2']]
+y = data['target_variable']
+
+# Add a constant term to the independent variables
+X = sm.add_constant(X)
+
+# Build the regression model
+model = sm.OLS(y, X).fit()
+
+# Print the regression results
+print(model.summary())
+
+# Make predictions
+predictions = model.predict(X)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: Time Series Analysis</strong>
+                    <p><a href="https://www.analyticsvidhya.com/blog/2021/07/an-introduction-to-time-series-forecasting-with-python/">Time Series Forecasting</a></p>
+                    <p><a href="https://www.coursera.org/learn/time-series-analysis">Time Series Analysis - Coursera</a></p>
+                    <pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.arima.model import ARIMA
+
+# Load time series data
+time_data = pd.read_csv('time_series_data.csv', parse_dates=['Date'], index_col='Date')
+
+# Plot the time series
+time_data.plot()
+plt.title('Time Series Data')
+plt.show()
+
+# Check for stationarity
+from statsmodels.tsa.stattools import adfuller
+result = adfuller(time_data['value'])
+print(f"ADF Statistic: {result[0]}, P-value: {result[1]}")
+
+# Fit an ARIMA model
+model = ARIMA(time_data['value'], order=(1,1,1))
+model_fit = model.fit()
+
+# Forecast future values
+forecast = model_fit.forecast(steps=10)
+print(forecast)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 7: Data Cleaning and Preparation</strong>
+                    <p><a href="https://www.kaggle.com/learn/data-cleaning">Data Cleaning - Kaggle</a></p>
+                    <p><a href="https://www.coursera.org/learn/data-preparation">Data Preparation - Coursera</a></p>
+                    <pre><code>
+# Handle missing values
+data['numerical_column'].fillna(data['numerical_column'].mean(), inplace=True)
+
+# Remove duplicates
+data.drop_duplicates(inplace=True)
+
+# Convert data types
+data['date_column'] = pd.to_datetime(data['date_column'])
+
+# Feature encoding
+data = pd.get_dummies(data, columns=['categorical_column'])
+
+# Normalize numerical features
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+data[['numerical_column1', 'numerical_column2']] = scaler.fit_transform(data[['numerical_column1', 'numerical_column2']])
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 8: Advanced Data Visualization</strong>
+                    <p><a href="https://seaborn.pydata.org/">Seaborn Documentation</a></p>
+                    <p><a href="https://www.datacamp.com/courses/introduction-to-data-visualization-with-seaborn">Data Visualization with Seaborn - DataCamp</a></p>
+                    <pre><code>
+# Pairplot
+sns.pairplot(data, vars=['feature1', 'feature2', 'feature3'], hue='target_variable')
+plt.show()
+
+# Heatmap
+sns.heatmap(data.corr(), annot=True, cmap='coolwarm')
+plt.title('Correlation Heatmap')
+plt.show()
+
+# Violin Plot
+sns.violinplot(x='categorical_column', y='numerical_column', data=data)
+plt.title('Violin Plot of Numerical Column by Categorical Column')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 9: Principal Component Analysis (PCA)</strong>
+                    <p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html">PCA with scikit-learn</a></p>
+                    <p><a href="https://www.coursera.org/learn/unsupervised-learning">Unsupervised Learning - Coursera</a></p>
+                    <pre><code>
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
+# Standardize the data
+features = ['feature1', 'feature2', 'feature3']
+x = data.loc[:, features].values
+x = StandardScaler().fit_transform(x)
+
+# Perform PCA
+pca = PCA(n_components=2)
+principal_components = pca.fit_transform(x)
+
+# Create a DataFrame with the principal components
+principal_df = pd.DataFrame(data=principal_components, columns=['PC1', 'PC2'])
+
+# Visualize the principal components
+plt.scatter(principal_df['PC1'], principal_df['PC2'])
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.title('PCA of Dataset')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 10: Clustering Techniques</strong>
+                    <p><a href="https://scikit-learn.org/stable/modules/clustering.html">Clustering with scikit-learn</a></p>
+                    <p><a href="https://www.coursera.org/learn/clustering-analysis">Clustering Analysis - Coursera</a></p>
+                    <pre><code>
+from sklearn.cluster import KMeans
+
+# Prepare the data
+X = data[['feature1', 'feature2']]
+
+# Determine the optimal number of clusters using the elbow method
+wcss = []
+for i in range(1,11):
+    kmeans = KMeans(n_clusters=i, random_state=0)
+    kmeans.fit(X)
+    wcss.append(kmeans.inertia_)
+
+plt.plot(range(1,11), wcss)
+plt.title('Elbow Method')
+plt.xlabel('Number of clusters')
+plt.ylabel('WCSS')
+plt.show()
+
+# Apply KMeans clustering
+kmeans = KMeans(n_clusters=3, random_state=0)
+data['Cluster'] = kmeans.fit_predict(X)
+
+# Visualize the clusters
+plt.scatter(X['feature1'], X['feature2'], c=data['Cluster'], cmap='viridis')
+plt.title('Clusters of Data')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Projects (المشاريع)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Exploratory Analysis of a Public Dataset</strong>
+                    <p><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a></p>
+                    <pre><code>
+# Choose a dataset from Kaggle
+# Example: Titanic Dataset
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the dataset
+titanic = pd.read_csv('titanic.csv')
+
+# Data overview
+print(titanic.info())
+print(titanic.describe())
+
+# Missing values
+print(titanic.isnull().sum())
+
+# Handle missing values
+titanic['Age'].fillna(titanic['Age'].median(), inplace=True)
+titanic['Embarked'].fillna(titanic['Embarked'].mode()[0], inplace=True)
+
+# Data visualization
+sns.countplot(x='Survived', data=titanic)
+plt.title('Survival Count')
+plt.show()
+
+sns.barplot(x='Sex', y='Survived', data=titanic)
+plt.title('Survival Rate by Sex')
+plt.show()
+
+sns.boxplot(x='Pclass', y='Age', data=titanic)
+plt.title('Age Distribution by Passenger Class')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Building a Predictive Model</strong>
+                    <p><a href="https://www.coursera.org/learn/machine-learning">Machine Learning - Coursera</a></p>
+                    <pre><code>
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+# Prepare the data
+features = ['Pclass', 'Sex', 'Age', 'Fare', 'Embarked']
+titanic['Sex'] = titanic['Sex'].map({'male': 0, 'female': 1})
+titanic = pd.get_dummies(titanic, columns=['Embarked'], drop_first=True)
+X = titanic[features]
+y = titanic['Survived']
+
+# Split the data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Build the model
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy}")
+
+# Confusion matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+print("Confusion Matrix:")
+print(conf_matrix)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Time Series Forecasting</strong>
+                    <p><a href="https://www.coursera.org/learn/time-series-analysis">Time Series Analysis - Coursera</a></p>
+                    <pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+# Load time series data
+data = pd.read_csv('monthly_sales.csv', parse_dates=['Date'], index_col='Date')
+
+# Plot the time series
+data.plot()
+plt.title('Monthly Sales Data')
+plt.show()
+
+# Decompose the time series
+decomposition = seasonal_decompose(data['Sales'], model='additive')
+decomposition.plot()
+plt.show()
+
+# Forecasting with ARIMA
+from statsmodels.tsa.arima.model import ARIMA
+
+model = ARIMA(data['Sales'], order=(2,1,2))
+model_fit = model.fit()
+forecast = model_fit.forecast(steps=12)
+print(forecast)
+
+# Plot the forecast
+plt.plot(data.index, data['Sales'], label='Actual')
+plt.plot(forecast.index, forecast, label='Forecast', color='red')
+plt.title('Sales Forecast')
+plt.legend()
+plt.show()
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+<!-- Course: Advanced Database Systems -->
+<div class="course-item">
+    <h3>DS2302: Advanced Database Systems</h3>
+    <p><strong>Description:</strong> This course covers advanced concepts in database systems, focusing on research-oriented topics, system design, and implementation strategies.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course delves into complex database topics, including distributed databases, NoSQL databases, database optimization, and advanced SQL concepts.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Distributed Databases and Data Replication</strong>
+                    <p><a href="https://www.coursera.org/learn/distributed-database-systems">Distributed Database Systems - Coursera</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/distributed-database-management-system-ddbms/">Distributed Database Systems - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Data distribution in a distributed database
+
+-- Example of horizontal fragmentation
+CREATE TABLE Customer_Details_Part1 AS
+SELECT * FROM Customer_Details WHERE Region = 'East';
+
+CREATE TABLE Customer_Details_Part2 AS
+SELECT * FROM Customer_Details WHERE Region = 'West';
+
+-- Data replication for fault tolerance
+-- Copying data across multiple nodes
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: NoSQL Databases</strong>
+                    <p><a href="https://www.mongodb.com/nosql-explained">NoSQL Explained - MongoDB</a></p>
+                    <p><a href="https://www.coursera.org/learn/nosql-databases">NoSQL Databases - Coursera</a></p>
+                    <pre><code>
+# Working with MongoDB
+
+# Inserting a document
+db.customers.insertOne({
+    "customer_id": 1,
+    "name": "Alice",
+    "orders": [
+        {"order_id": 101, "amount": 250},
+        {"order_id": 102, "amount": 450}
+    ]
+})
+
+# Querying documents
+db.customers.find({"customer_id": 1})
+
+# Updating a document
+db.customers.updateOne(
+    {"customer_id": 1},
+    { $set: { "name": "Alice Smith" } }
+)
+
+# Deleting a document
+db.customers.deleteOne({"customer_id": 1})
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: Database Security and Access Control</strong>
+                    <p><a href="https://www.coursera.org/learn/database-security">Database Security - Coursera</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/database-security/">Database Security - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Managing users and permissions
+
+-- Creating a new user
+CREATE USER 'john_doe'@'localhost' IDENTIFIED BY 'password123';
+
+-- Granting privileges
+GRANT SELECT, INSERT ON SchoolDB.* TO 'john_doe'@'localhost';
+
+-- Revoking privileges
+REVOKE INSERT ON SchoolDB.* FROM 'john_doe'@'localhost';
+
+-- Implementing row-level security (Example in PostgreSQL)
+-- Enable row-level security
+ALTER TABLE Employees ENABLE ROW LEVEL SECURITY;
+
+-- Create a policy
+CREATE POLICY employee_policy ON Employees
+    USING (department = current_setting('myapp.current_department'));
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Transaction Management and Concurrency Control</strong>
+                    <p><a href="https://www.coursera.org/learn/database-systems-concepts-design">Database Systems Concepts - Coursera</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/concurrency-control-in-dbms/">Concurrency Control - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Implementing transactions with isolation levels
+
+-- Start a transaction
+START TRANSACTION;
+
+-- Set isolation level
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+-- Perform operations
+UPDATE Accounts SET Balance = Balance - 100 WHERE AccountID = 1;
+UPDATE Accounts SET Balance = Balance + 100 WHERE AccountID = 2;
+
+-- Commit the transaction
+COMMIT;
+
+-- Handling deadlocks
+-- Database systems automatically detect deadlocks and resolve them
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Query Optimization Techniques</strong>
+                    <p><a href="https://use-the-index-luke.com/">SQL Performance Explained</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/query-optimization-techniques-in-sql/">Query Optimization Techniques - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Using indexes to improve query performance
+
+-- Create an index
+CREATE INDEX idx_customer_name ON Customers(CustomerName);
+
+-- Analyze a query execution plan
+EXPLAIN SELECT * FROM Customers WHERE CustomerName = 'John Doe';
+
+-- Using materialized views
+CREATE MATERIALIZED VIEW total_sales AS
+SELECT CustomerID, SUM(Amount) AS TotalSales
+FROM Orders
+GROUP BY CustomerID;
+
+-- Refresh the materialized view
+REFRESH MATERIALIZED VIEW total_sales;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: Data Warehousing and OLAP</strong>
+                    <p><a href="https://www.coursera.org/learn/data-warehousing">Data Warehousing - Coursera</a></p>
+                    <p><a href="https://www.geeksforgeeks.org/difference-between-olap-and-oltp/">OLAP vs OLTP - GeeksforGeeks</a></p>
+                    <pre><code>
+-- Designing a star schema
+
+-- Fact table
+CREATE TABLE Sales_Fact (
+    SaleID INT PRIMARY KEY,
+    ProductID INT,
+    CustomerID INT,
+    TimeID INT,
+    Amount DECIMAL(10,2)
+);
+
+-- Dimension tables
+CREATE TABLE Product_Dim (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50)
+);
+
+CREATE TABLE Customer_Dim (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    Region VARCHAR(50)
+);
+
+CREATE TABLE Time_Dim (
+    TimeID INT PRIMARY KEY,
+    Date DATE,
+    Month INT,
+    Quarter INT,
+    Year INT
+);
+
+-- Performing OLAP operations
+-- Example: Roll-up and Drill-down
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 7: Big Data Technologies and Hadoop</strong>
+                    <p><a href="https://hadoop.apache.org/">Apache Hadoop</a></p>
+                    <p><a href="https://www.coursera.org/learn/big-data-integration-processing">Big Data Integration and Processing - Coursera</a></p>
+                    <pre><code>
+# Working with Hadoop Distributed File System (HDFS)
+
+# Listing files in HDFS
+hdfs dfs -ls /
+
+# Copying files to HDFS
+hdfs dfs -put localfile.txt /user/hadoop/
+
+# Running a MapReduce job
+hadoop jar /path/to/hadoop-streaming.jar \
+    -input /user/hadoop/input \
+    -output /user/hadoop/output \
+    -mapper /path/to/mapper.py \
+    -reducer /path/to/reducer.py
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 8: NewSQL Databases</strong>
+                    <p><a href="https://www.cockroachlabs.com/">CockroachDB</a></p>
+                    <p><a href="https://www.coursera.org/learn/cloud-sql-nosql">Cloud SQL and NewSQL Databases - Coursera</a></p>
+                    <pre><code>
+-- Exploring NewSQL databases
+
+-- Features:
+-- - Scalability
+-- - ACID transactions
+-- - SQL query interface
+
+-- Example using CockroachDB
+-- Create a table
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name STRING,
+    email STRING UNIQUE
+);
+
+-- Insert data
+INSERT INTO users (id, name, email) VALUES (1, 'Alice', 'alice@example.com');
+
+-- Query data
+SELECT * FROM users WHERE email = 'alice@example.com';
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 9: Graph Databases and Neo4j</strong>
+                    <p><a href="https://neo4j.com/developer/get-started/">Getting Started with Neo4j</a></p>
+                    <p><a href="https://www.coursera.org/learn/graph-databases">Graph Databases - Coursera</a></p>
+                    <pre><code>
+-- Using Cypher Query Language
+
+// Create nodes
+CREATE (p1:Person {name: 'Alice'})
+CREATE (p2:Person {name: 'Bob'})
+CREATE (p3:Person {name: 'Charlie'})
+
+// Create relationships
+CREATE (p1)-[:FRIEND_OF]->(p2)
+CREATE (p2)-[:FRIEND_OF]->(p3)
+CREATE (p1)-[:FRIEND_OF]->(p3)
+
+// Query paths
+MATCH (a:Person)-[:FRIEND_OF*]->(b:Person)
+WHERE a.name = 'Alice' AND b.name = 'Charlie'
+RETURN a.name, b.name
+
+// Finding mutual friends
+MATCH (p1:Person)-[:FRIEND_OF]->(friend)-[:FRIEND_OF]->(p2:Person)
+WHERE p1.name = 'Alice' AND p2.name = 'Bob'
+RETURN friend.name AS MutualFriend
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 10: Database as a Service (DBaaS)</strong>
+                    <p><a href="https://aws.amazon.com/rds/">Amazon RDS</a></p>
+                    <p><a href="https://azure.microsoft.com/en-us/services/sql-database/">Azure SQL Database</a></p>
+                    <pre><code>
+-- Connecting to a cloud-based database
+
+-- Example: Connecting to AWS RDS using Python
+
+import pymysql
+
+connection = pymysql.connect(
+    host='your-db-instance.c9akciq32.rds.amazonaws.com',
+    user='yourusername',
+    password='yourpassword',
+    db='yourdbname'
+)
+
+try:
+    with connection.cursor() as cursor:
+        sql = "SELECT VERSION()"
+        cursor.execute(sql)
+        result = cursor.fetchone()
+        print("Database version:", result[0])
+finally:
+    connection.close()
+
+-- Advantages of DBaaS:
+-- - Scalability
+-- - Managed backups
+-- - High availability
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Practical Exercises (التطبيق العملي)</summary>
+            <ul>
+                <li>
+                    <strong>Exercise: Implementing a Distributed Database Simulation</strong>
+                    <p><a href="https://www.postgresql.org/docs/current/sql-createforeigndatawrapper.html">Foreign Data Wrappers in PostgreSQL</a></p>
+                    <pre><code>
+-- Using Foreign Data Wrappers to access external databases
+
+-- Install the extension
+CREATE EXTENSION postgres_fdw;
+
+-- Create a foreign server
+CREATE SERVER foreign_server
+    FOREIGN DATA WRAPPER postgres_fdw
+    OPTIONS (host 'remote_host', dbname 'remote_db', port '5432');
+
+-- Create a user mapping
+CREATE USER MAPPING FOR current_user
+    SERVER foreign_server
+    OPTIONS (user 'remote_user', password 'remote_password');
+
+-- Import foreign schema
+IMPORT FOREIGN SCHEMA public
+    FROM SERVER foreign_server INTO foreign_schema;
+
+-- Querying remote tables
+SELECT * FROM foreign_schema.remote_table;
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Working with NoSQL Databases</strong>
+                    <p><a href="https://www.mongodb.com/">MongoDB</a></p>
+                    <pre><code>
+# Install MongoDB and perform basic operations
+
+# Insert multiple documents
+db.inventory.insertMany([
+    { item: "journal", qty: 25, status: "A", size: { h: 14, w: 21, uom: "cm" } },
+    { item: "notebook", qty: 50, status: "A", size: { h: 8.5, w: 11, uom: "in" } },
+    { item: "paper", qty: 100, status: "D", size: { h: 8.5, w: 11, uom: "in" } }
+])
+
+# Query documents
+db.inventory.find({ status: "A", qty: { $lt: 30 } })
+
+# Update documents
+db.inventory.updateOne(
+    { item: "paper" },
+    { $set: { qty: 120 }, $currentDate: { lastModified: true } }
+)
+
+# Delete documents
+db.inventory.deleteMany({ status: "D" })
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Using Neo4j for Network Analysis</strong>
+                    <p><a href="https://neo4j.com/developer/example-project/">Neo4j Example Projects</a></p>
+                    <pre><code>
+-- Create a graph representing a social network
+
+// Create nodes
+CREATE (alice:Person {name: 'Alice'})
+CREATE (bob:Person {name: 'Bob'})
+CREATE (carol:Person {name: 'Carol'})
+CREATE (dave:Person {name: 'Dave'})
+
+// Create relationships
+CREATE (alice)-[:FRIEND_OF]->(bob)
+CREATE (bob)-[:FRIEND_OF]->(carol)
+CREATE (carol)-[:FRIEND_OF]->(dave)
+CREATE (alice)-[:FRIEND_OF]->(dave)
+
+// Find shortest path between two people
+MATCH p=shortestPath((a:Person {name: 'Alice'})-[*]-(b:Person {name: 'Carol'}))
+RETURN p
+
+// Find people within 2 degrees of separation
+MATCH (a:Person {name: 'Alice'})-[:FRIEND_OF*1..2]-(b:Person)
+RETURN DISTINCT b.name AS Connection
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Final Projects (المشاريع النهائية)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Designing a Distributed Database for an Online Marketplace</strong>
+                    <p><a href="https://www.coursera.org/learn/distributed-database-systems">Distributed Database Systems - Coursera</a></p>
+                    <pre><code>
+-- Create a distributed database schema
+-- Implement data partitioning and replication strategies
+-- Ensure data consistency and availability
+
+-- Simulate transactions across distributed nodes
+-- Handle concurrency control and conflict resolution
+-- Evaluate system performance and scalability
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Developing a Recommendation Engine Using Graph Databases</strong>
+                    <p><a href="https://neo4j.com/developer/graph-data-science/">Graph Data Science with Neo4j</a></p>
+                    <pre><code>
+-- Build a recommendation system based on user interactions
+
+// Load data about users, items, and interactions
+CREATE (user1:User {id: 'user1'})
+CREATE (user2:User {id: 'user2'})
+CREATE (item1:Item {id: 'item1'})
+CREATE (item2:Item {id: 'item2'})
+CREATE (item3:Item {id: 'item3'})
+
+CREATE (user1)-[:VIEWED]->(item1)
+CREATE (user1)-[:PURCHASED]->(item2)
+CREATE (user2)-[:PURCHASED]->(item1)
+CREATE (user2)-[:VIEWED]->(item3)
+
+// Generate recommendations
+MATCH (target:User {id: 'user1'})-[:PURCHASED|VIEWED]->(item)<-[:PURCHASED|VIEWED]-(other:User)-[:PURCHASED|VIEWED]->(rec:Item)
+WHERE NOT (target)-[:PURCHASED|VIEWED]->(rec)
+RETURN rec.id AS RecommendedItem, COUNT(*) AS Score
+ORDER BY Score DESC
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Implementing a Data Warehouse and Performing OLAP Analysis</strong>
+                    <p><a href="https://www.coursera.org/learn/data-warehousing-business-intelligence">Data Warehousing and Business Intelligence - Coursera</a></p>
+                    <pre><code>
+-- Design and build a data warehouse for a retail chain
+-- Extract, transform, and load (ETL) data from operational systems
+-- Create fact and dimension tables
+
+-- Perform OLAP queries
+-- Example: Analyze sales data to find trends
+
+SELECT 
+    Time_Dim.Year, 
+    Product_Dim.Category, 
+    SUM(Sales_Fact.Amount) AS TotalSales
+FROM 
+    Sales_Fact
+JOIN 
+    Product_Dim ON Sales_Fact.ProductID = Product_Dim.ProductID
+JOIN 
+    Time_Dim ON Sales_Fact.TimeID = Time_Dim.TimeID
+GROUP BY 
+    Time_Dim.Year, 
+    Product_Dim.Category;
+
+-- Use BI tools for data visualization and reporting
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+<!-- Course: Research Methods in Data Science -->
+<div class="course-item">
+    <h3>DS2301: Research Methods in Data Science</h3>
+    <p><strong>Description:</strong> This course explores research methodologies used in data science, including experimental design, data collection, and analysis techniques.</p>
+    <details>
+        <summary>View Summary</summary>
+        <p>This course introduces students to research methods relevant to data science projects, focusing on both qualitative and quantitative approaches to data collection and analysis.</p>
+
+        <details>
+            <summary>Chapters (الفصول)</summary>
+            <ul>
+                <li>
+                    <strong>Chapter 1: Introduction to Research Methodologies</strong>
+                    <p><a href="https://www.coursera.org/learn/research-methods">Research Methods - Coursera</a></p>
+                    <p><a href="https://www.khanacademy.org/test-prep/mcat/processing-the-environment/research-methods-in-psychology">Research Methods - Khan Academy</a></p>
+                    <pre><code>
+# Overview of research methodologies
+print("Research methodologies provide systematic ways to collect and analyze data in data science projects.")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 2: Experimental Design in Data Science</strong>
+                    <p><a href="https://www.edx.org/course/data-science-experimental-design">Data Science Experimental Design - edX</a></p>
+                    <p><a href="https://www.coursera.org/learn/designexperiments">Design of Experiments - Coursera</a></p>
+                    <pre><code>
+# Designing an experiment in Python
+
+# Define the hypothesis
+# H0: The new feature has no effect on user engagement.
+# H1: The new feature increases user engagement.
+
+# Split users into control and treatment groups
+import numpy as np
+
+users = np.arange(1000)
+np.random.shuffle(users)
+control_group = users[:500]
+treatment_group = users[500:]
+
+# Collect data on user engagement
+# Simulated data
+control_engagement = np.random.normal(50, 10, 500)
+treatment_engagement = np.random.normal(55, 10, 500)
+
+# Perform statistical test
+from scipy.stats import ttest_ind
+t_stat, p_value = ttest_ind(treatment_engagement, control_engagement)
+print(f"T-statistic: {t_stat}, P-value: {p_value}")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 3: Qualitative Data Collection Methods</strong>
+                    <p><a href="https://www.coursera.org/learn/qualitative-methods">Qualitative Research Methods - Coursera</a></p>
+                    <p><a href="https://www.research-methodology.net/research-methods/qualitative-research/">Qualitative Research - Research-Methodology.net</a></p>
+                    <pre><code>
+# Sample questions for an interview
+questions = [
+    "Can you describe your experience using our product?",
+    "What challenges have you faced while using the product?",
+    "What features would you like to see in the future?"
+]
+
+# Conducting an interview
+for question in questions:
+    response = input(question + " ")
+    print(f"Response: {response}")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 4: Quantitative Data Analysis Techniques</strong>
+                    <p><a href="https://www.datacamp.com/courses/statistical-thinking-in-python-part-1">Statistical Thinking in Python - DataCamp</a></p>
+                    <p><a href="https://www.coursera.org/learn/inferential-statistics-intro">Inferential Statistics - Coursera</a></p>
+                    <pre><code>
+# Analyzing survey data
+import pandas as pd
+
+# Load survey data
+survey_data = pd.read_csv('survey_results.csv')
+
+# Calculate descriptive statistics
+mean_age = survey_data['Age'].mean()
+gender_counts = survey_data['Gender'].value_counts()
+
+print(f"Mean Age: {mean_age}")
+print("Gender Distribution:")
+print(gender_counts)
+
+# Visualization
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.barplot(x=gender_counts.index, y=gender_counts.values)
+plt.title('Gender Distribution')
+plt.show()
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 5: Ethical Considerations in Data Science Research</strong>
+                    <p><a href="https://www.coursera.org/learn/data-science-ethics">Data Science Ethics - Coursera</a></p>
+                    <p><a href="https://www.datasciencecentral.com/profiles/blogs/ethical-issues-in-data-science">Ethical Issues in Data Science</a></p>
+                    <pre><code>
+# Guidelines for ethical research
+guidelines = [
+    "Obtain informed consent from participants.",
+    "Ensure data privacy and confidentiality.",
+    "Avoid bias and ensure fairness in data analysis.",
+    "Be transparent about methods and findings."
+]
+
+for guideline in guidelines:
+    print(f"- {guideline}")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 6: Writing and Presenting Research Findings</strong>
+                    <p><a href="https://www.coursera.org/learn/academic-writing">Academic Writing - Coursera</a></p>
+                    <p><a href="https://www.scribbr.com/category/research-paper/">Research Paper Writing - Scribbr</a></p>
+                    <pre><code>
+# Structure of a research paper
+sections = [
+    "Abstract",
+    "Introduction",
+    "Literature Review",
+    "Methodology",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "References"
+]
+
+for section in sections:
+    print(f"Section: {section}")
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 7: Survey Design and Analysis</strong>
+                    <p><a href="https://www.qualtrics.com/experience-management/research/survey-design/">Survey Design - Qualtrics</a></p>
+                    <p><a href="https://www.surveymonkey.com/mp/survey-guidelines/">Survey Guidelines - SurveyMonkey</a></p>
+                    <pre><code>
+# Designing a survey using Python
+
+import pandas as pd
+
+# Define survey questions
+survey_questions = {
+    'Q1': 'How satisfied are you with our product?',
+    'Q2': 'How likely are you to recommend our product to others?',
+    'Q3': 'What improvements would you like to see?'
+}
+
+# Collect responses
+responses = []
+
+for i in range(10):  # Simulate 10 respondents
+    response = {
+        'Q1': input(survey_questions['Q1'] + " "),
+        'Q2': input(survey_questions['Q2'] + " "),
+        'Q3': input(survey_questions['Q3'] + " ")
+    }
+    responses.append(response)
+
+# Create a DataFrame
+survey_df = pd.DataFrame(responses)
+
+# Analyze responses
+satisfaction_counts = survey_df['Q1'].value_counts()
+print("Satisfaction Levels:")
+print(satisfaction_counts)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Chapter 8: Case Studies in Data Science Research</strong>
+                    <p><a href="https://www.kaggle.com/c/titanic">Titanic Survival Prediction - Kaggle</a></p>
+                    <p><a href="https://archive.ics.uci.edu/ml/datasets.php">UCI Machine Learning Repository</a></p>
+                    <pre><code>
+# Analyzing a case study dataset
+
+# Load dataset
+data = pd.read_csv('titanic.csv')
+
+# Define research questions
+print("Research Questions:")
+print("1. What factors affect survival rates on the Titanic?")
+print("2. Is there a significant difference in survival rates between genders?")
+
+# Data analysis
+survival_rates = data.groupby('Sex')['Survived'].mean()
+print("Survival Rates by Gender:")
+print(survival_rates)
+
+# Statistical test
+from scipy.stats import chi2_contingency
+
+contingency_table = pd.crosstab(data['Sex'], data['Survived'])
+chi2, p, dof, expected = chi2_contingency(contingency_table)
+print(f"Chi-square Statistic: {chi2}, P-value: {p}")
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Practical Exercises (التطبيق العملي)</summary>
+            <ul>
+                <li>
+                    <strong>Exercise: Designing an Experiment</strong>
+                    <p><a href="https://www.coursera.org/learn/designexperiments">Design of Experiments - Coursera</a></p>
+                    <pre><code>
+# Task: Design an experiment to test the effectiveness of a new teaching method.
+
+# Steps:
+# 1. Define the hypothesis.
+# 2. Select a sample of students.
+# 3. Randomly assign students to control and experimental groups.
+# 4. Apply the traditional method to the control group and the new method to the experimental group.
+# 5. Measure the outcomes (e.g., test scores).
+# 6. Analyze the results using appropriate statistical tests.
+
+# Example code for random assignment
+import random
+
+students = ['Student_' + str(i) for i in range(1, 51)]
+random.shuffle(students)
+control_group = students[:25]
+experimental_group = students[25:]
+
+print("Control Group:")
+print(control_group)
+print("Experimental Group:")
+print(experimental_group)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Conducting a Survey</strong>
+                    <p><a href="https://www.surveymonkey.com/mp/how-to-create-surveys/">How to Create Surveys - SurveyMonkey</a></p>
+                    <pre><code>
+# Use an online tool to create and distribute a survey.
+
+# Steps:
+# 1. Define the objectives of the survey.
+# 2. Develop clear and concise questions.
+# 3. Choose the appropriate question types (e.g., multiple-choice, Likert scale).
+# 4. Pilot test the survey with a small group.
+# 5. Distribute the survey to the target audience.
+# 6. Collect and analyze the responses.
+
+# Example: Analyze survey responses using Python
+import pandas as pd
+
+# Load survey data
+survey_data = pd.read_csv('survey_responses.csv')
+
+# Calculate response rates
+response_rate = len(survey_data) / total_invited * 100
+print(f"Response Rate: {response_rate}%")
+
+# Analyze a specific question
+satisfaction_levels = survey_data['Satisfaction'].value_counts()
+print("Satisfaction Levels:")
+print(satisfaction_levels)
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Exercise: Qualitative Data Analysis</strong>
+                    <p><a href="https://www.atlasti.com/">ATLAS.ti Qualitative Analysis Software</a></p>
+                    <pre><code>
+# Analyze interview transcripts for common themes.
+
+# Steps:
+# 1. Transcribe the interviews.
+# 2. Read through the transcripts to become familiar with the data.
+# 3. Code the data by labeling sections with thematic tags.
+# 4. Identify patterns and relationships between themes.
+# 5. Summarize the findings in a report.
+
+# Example: Using Python for basic text analysis
+from collections import Counter
+
+# Load transcript text
+with open('interview_transcript.txt', 'r') as file:
+    text = file.read()
+
+# Tokenize the text
+import nltk
+nltk.download('punkt')
+words = nltk.word_tokenize(text)
+
+# Remove stop words
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+filtered_words = [w for w in words if w.lower() not in stop_words and w.isalpha()]
+
+# Find the most common words
+word_counts = Counter(filtered_words)
+print("Most Common Words:")
+print(word_counts.most_common(10))
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Final Projects (المشاريع النهائية)</summary>
+            <ul>
+                <li>
+                    <strong>Project: Comprehensive Research Study</strong>
+                    <p><a href="https://www.coursera.org/specializations/machine-learning">Machine Learning Specialization - Coursera</a></p>
+                    <pre><code>
+# Conduct a full research project on a chosen data science topic.
+
+# Steps:
+1. Identify a research question or hypothesis.
+2. Conduct a literature review to understand the current state of knowledge.
+3. Design the methodology, including data collection and analysis methods.
+4. Collect data through experiments, surveys, or existing datasets.
+5. Analyze the data using appropriate statistical or machine learning techniques.
+6. Interpret the results in the context of the research question.
+7. Write a research paper documenting the study.
+8. Present the findings to peers or at a conference.
+
+# Example: Investigate factors influencing customer churn in a telecom dataset.
+
+# Load dataset
+data = pd.read_csv('telecom_churn.csv')
+
+# Data preprocessing
+# ...
+
+# Exploratory data analysis
+# ...
+
+# Build predictive model
+from sklearn.ensemble import RandomForestClassifier
+
+X = data.drop('Churn', axis=1)
+y = data['Churn']
+
+# Split data
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Train model
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Evaluate model
+from sklearn.metrics import classification_report
+y_pred = model.predict(X_test)
+print(classification_report(y_test, y_pred))
+
+# Interpret results and draw conclusions
+                    </code></pre>
+                </li>
+
+                <li>
+                    <strong>Project: Ethical Analysis of a Data Science Application</strong>
+                    <p><a href="https://www.datasciencecentral.com/profiles/blogs/ethical-dilemmas-in-data-science">Ethical Dilemmas in Data Science</a></p>
+                    <pre><code>
+# Choose a data science application (e.g., facial recognition technology).
+
+# Steps:
+1. Research the application and its societal impact.
+2. Identify ethical concerns related to privacy, bias, and fairness.
+3. Analyze these concerns using ethical frameworks.
+4. Propose solutions or guidelines to address the ethical issues.
+5. Present the analysis in a detailed report.
+
+# Example Outline:
+- Introduction to facial recognition technology.
+- Potential benefits and uses.
+- Ethical concerns:
+   - Privacy violations.
+   - Racial and gender bias.
+   - Misuse by authorities.
+- Analysis using ethical theories (e.g., utilitarianism, deontology).
+- Recommendations for ethical use.
+- Conclusion.
+                    </code></pre>
+                </li>
+            </ul>
+        </details>
+    </details>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Data Science Major</p>
+            <p><a href="developer.html">🔗 Meet Our Developers</a></p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript Files -->
+    <script src="../js/script.js"></script>
+    <script src="../js/messege.js"></script>
+
+</body>
+</html>
