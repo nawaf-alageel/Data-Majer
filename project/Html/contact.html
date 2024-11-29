@@ -104,12 +104,12 @@
 
                 if (result.status === "success") {
                     confirmation.innerHTML = `
-                        <p>تم إرسال رسالتك بنجاح!</p>
-                        <p>رقم التذكرة الخاص بك هو: <strong>${result.ticket}</strong></p>
+                        <p>Your message has been sent successfully!</p>
+                        <p>Your ticket number is: <strong>${result.ticket}</strong></p>
                     `;
                     form.reset();
                 } else {
-                    confirmation.innerHTML = `<p>فشل في إرسال رسالتك: ${result.message}</p>`;
+                    confirmation.innerHTML = `<p>Failed to send your message: ${result.message}</p>`;
                 }
             };
 
@@ -118,7 +118,7 @@
             script.src = `https://script.google.com/macros/s/AKfycbwboQ4JGDFh9AefLheX6NIaqSoNJQkweTyU2iWtDJgSTAv44hG2_vqWb65keysoPCA-/exec?callback=handleResponse&${queryString}`;
             script.onerror = function() {
                 const confirmation = document.getElementById("confirmation");
-                confirmation.innerHTML = `<p>حدث خطأ أثناء إرسال رسالتك.</p>`;
+                confirmation.innerHTML = `<p>An error occurred while sending your message.</p>`;
             };
             document.body.appendChild(script);
         }
