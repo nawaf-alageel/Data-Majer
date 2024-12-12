@@ -76,11 +76,11 @@ project/
 
 3. Open the `Html` folder and launch `Home.html` in your browser 🌐.
 
-## 👩‍💻👨‍💻 Contributors 🌟
+## 👨‍💻 Contributors 🌟
 
 - **Nawaf Abdulrhman Alageel**  👨‍💻
 - **Mohammed Khaled Altufayhi**  👨‍💻
-- **Anas Mohammed Alsubhi**  👩‍💻
+- **Anas Mohammed Alsubhi**  👨‍💻
 - **Faisal Hammad Alomari**  👨‍💻
 - **Albadar Ibrahim Almaymani**  👨‍💻
 
