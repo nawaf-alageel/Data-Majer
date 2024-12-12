@@ -1,3 +1,5 @@
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 # 🌐️🛠️ Data Science Major Website Project 📚🌟
 
 ## 📄🔍 Overview
